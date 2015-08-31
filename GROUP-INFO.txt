@@ -1,2 +1,6 @@
 Jacob Cole
+<<<<<<< HEAD
 Parker Cantu
+=======
+Michael Pittard
+>>>>>>> origin/master
