@@ -1,0 +1,19 @@
+The Textbook Triad
+
+Meeting 1:
+	Date: 8/28/15
+	Time: 2:30pm-4:00pm
+	Location: Discovery Park
+	Attendees:	Jacob Cole
+			Parker Cantu
+			Michael Pittard
+	Discussion:	Introductions were made and the group was formed. After a short discussion, Github was chosen to be used for our project repository. The repository was set and, and assignment 1 was completed.
+ 
+Meeting 2:
+	Date 9/4/15
+	Time: 2:30pm-4:00pm
+	Location: Discovery Park
+	Attendees:	Jacob Cole
+			Parker Cantu
+			Michael Pittard 
+	Discussion:	The team worked in depth on Deliverable 1. A basic structure of the project proposal was formed. And team planned out how Deliverable 1 was going to be completed.
