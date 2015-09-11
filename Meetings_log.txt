@@ -20,7 +20,7 @@ Meeting 2:
 
 Meeting 3:
 	Date 9/6/15
-	Time: 3:00pm
+	Time: 3:00-6:00pm
 	Location: Willis Library
 	Attendees:	Jacob Cole
 			Parker Cantu
@@ -28,7 +28,7 @@ Meeting 3:
 	Discussion:	The team worked on the Deliverable 1 paper and powerpoint. 
 Meeting 4:
 	Date 9/10/15
-	Time: 8:00pm
+	Time: 8:00-9:00pm
 	Location: Skype
 	Attendees:	Jacob Cole
 			Parker Cantu
