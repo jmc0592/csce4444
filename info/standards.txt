@@ -1,0 +1,16 @@
+I've tried to not be too hard on this, but I'm a bit OCD when it comes to naming convetions. Also it will help be
+consistent in our code, and make searching for things easier.
+
+-File/Directory Naming
+	- NO WHITE SPACES
+	- no underscores
+	- use lower camelCase e.g. myNewFileIsThisName.txt
+
+-Code
+	- functions
+		- see File Naming for naming
+		- name a function based on what it does e.g. isConnected(), voertmansStatus()
+		- put start curly bracket on line below function name
+	- variables
+		- see File Naming for naming
+		- name a varible so it's clear what it's holding e.g. totalPrice, bookPrice

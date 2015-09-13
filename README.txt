@@ -4,6 +4,10 @@
 directory structure
 
 |project/
+	|reports
+	|presentations
+	|info
+	|content
 	|site/
 		|index.html
 		|css/
