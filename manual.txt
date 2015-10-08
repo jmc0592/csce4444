@@ -1,0 +1,5 @@
+UNTextbook Finder Manual
+
+- Testing
+	- A directory named siteTest is where all testing will occur. Unit testing will be the main focus.
+	

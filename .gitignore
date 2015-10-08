@@ -1,0 +1,8 @@
+# Mac files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Sublime Text files
+*.sublime-project
+*.sublime-workspace
