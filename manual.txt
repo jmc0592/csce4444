@@ -2,4 +2,9 @@ UNTextbook Finder Manual
 
 - Testing
 	- A directory named siteTest is where all testing will occur. Unit testing will be the main focus.
+
+- UNT Bookstore Website Structure / Behaviour
+	
+	- The 'Find Textbook' page presents 4 rows of search criteria allowing you to search for 4 books at once. 
+	Each of these rows a Term, Department, Course, and Section field.
 	
