@@ -10,6 +10,8 @@
 		<div id = "bannertext"><h1>UNTextbookFinder</h1></div>
 	</div>
 	<div id = "left">
+	</div>
+	<div id = "right">
 		<div id = "select">
 			<select class = "selectmenus">
 				<option value="option1">option1</option>

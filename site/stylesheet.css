@@ -1,29 +1,29 @@
 body{
-	background-color:white;
-}
-
-#bannertext{
-	font-size:2em;
-	position:left;
-	color:darkgreen;
-	padding-top:2em;
-	float:left;
-	margin-left:1em;
-	margin-bottom:0em;
+	background-color:green;
 }
 
 #banner{
 	z-index: 2;
-	position:fixed;
+	position:relative;
 	background-color: lightgreen;
 	width: 100%;
-	height: 8em;
-	margin-top:-1em;
-	margin-left:-.5em;
+	height: 75px;
+	margin-top:-15px;
+	margin-left:0px;
 	margin-bottom:0em;
 	border-style: solid;
 	border-width: 5px;
-	border-color: darkgreen;
+	border-color: lightgreen;
+	border-bottom-color: darkgreen;
+	border-right-color: darkgreen;
+}
+
+#banner h1{
+	font-size:2em;
+	position:left;
+	color:darkgreen;
+	float:left;
+	margin-left:15px;
 }
 
 #bannertext{
@@ -33,10 +33,10 @@ body{
 }
 
 #left{
-	z-index: 1;
+	z-index:2;
+	float: left;
 	position: relative;
-	margin-left:-.5em;
-	width: 10em;
+	width: 9em;
 	height: 55em;
 	background-color: darkgreen;
 	border-style: solid;
@@ -44,25 +44,32 @@ body{
 	border-color: darkgreen;
 }
 
+#right{
+	z-index:1;
+	position: relative;
+	margin-left:0px;
+	width: 100%;
+	height: 55em;
+	background-color: #F4EBC3;
+}
+
 #select{
+	margin-left:250px;
 	z-index:3;
 	position:relative;
-	top:8em;
 	font-size:1em;
 	text-align:left;
 	color:green;
 	width: 5em;
-	margin-left:.5em;
 	
 }
 
 .selectmenus{
-	margin-top:1em;
+	margin-top:15px;
 }
 
 select{
-width: 180%;
-
+	width: 600%;
 }
 
 
