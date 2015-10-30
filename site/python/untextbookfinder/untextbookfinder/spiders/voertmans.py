@@ -25,7 +25,7 @@ class VoertmansSpider(scrapy.Spider):
 		self.courseChoice = courseChoice
 		self.sectionChoice = sectionChoice
 
-	def parse(self, response):
+	def submitForm(self, response):
 		driver = webdriver.Firefox()
 		driver.get(response.url)
 
@@ -51,7 +51,6 @@ class VoertmansSpider(scrapy.Spider):
 		)
 		courseOption.click()
 
-		print "-----self.sectionChoice = " + self.sectionChoice + "-----"#debug
 		#select section from dropdown
 		sectionOption = driver.find_element_by_xpath(
 			"//select[@id='section_selection']/option[@value='" + self.sectionChoice + "']"
@@ -61,5 +60,13 @@ class VoertmansSpider(scrapy.Spider):
 		driver.find_element_by_id("search-button").click()
 
 		time.sleep(10)#debug
+		self.pageSource = driver.page_source
 
 		driver.quit()
+
+	def insertIntoDB():
+		pass
+
+	def parse(self, response):
+		self.submitForm(response)
+		self.insertIntoDB()
