@@ -9,7 +9,7 @@
 		<div id = "bannertext"><h1>UNTextbookFinder</h1></div>
 	</div>
 	<div id = "left">
-		<p><a href="index.php">Home</a></p>
+		<p><a href="../index.php">Home</a></p>
 		<p><a href="">About Us</a></p>
 	</div>
 	<div id = "right">
