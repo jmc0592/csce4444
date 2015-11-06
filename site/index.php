@@ -13,31 +13,32 @@
 		<p><a href="">About Us</a></p>
 	</div>
 	<div id = "right">
-		<div id = "select">
-			<select class = "selectmenus">
-				<option value="option1">option1</option>
-				<option value="option2">option2</option>
-				<option value="option3">option3</option>
-				<option value="option4">option4</option>
-			</select>
-			<select class = "selectmenus">
-				<option value="option1">option1</option>
-				<option value="option2">option2</option>
-				<option value="option3">option3</option>
-				<option value="option4">option4</option>
-			</select>
-			<select class = "selectmenus">
-				<option value="option1">option1</option>
-				<option value="option2">option2</option>
-				<option value="option3">option3</option>
-				<option value="option4">option4</option>
-			</select>
-			<a href="search/search.php">
-				<div id = "button">
-					<p>SEARCH &#9654;</p>
-				</div>
-			</a>
-		</div>
+		<form id="bookform" action="search/search.php">
+			<div id = "select">
+				<select class = "selectmenus" name = "department" form="bookform">
+					<option value="" disabled="disabled" selected="selected">Select</option>
+					<option value="option1">option1</option>
+					<option value="option2">option2</option>
+					<option value="option3">option3</option>
+					<option value="option4">option4</option>
+				</select>
+				<select class = "selectmenus" name = "course" form="bookform">
+					<option value="" disabled="disabled" selected="selected">Select</option>
+					<option value="option1">option1</option>
+					<option value="option2">option2</option>
+					<option value="option3">option3</option>
+					<option value="option4">option4</option>
+				</select>
+				<select class = "selectmenus" name = "section" form="bookform">
+					<option value="" disabled="disabled" selected="selected">Select</option>
+					<option value="option1">option1</option>
+					<option value="option2">option2</option>
+					<option value="option3">option3</option>
+					<option value="option4">option4</option>
+				</select>
+			</div>
+		<input id="button" type = "submit">
+		</form>
 	</div>
 	<div id = "footer">
 	</div>
