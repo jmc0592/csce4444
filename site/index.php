@@ -36,8 +36,8 @@
 					<option value="option3">option3</option>
 					<option value="option4">option4</option>
 				</select>
-			</div>
-		<input id="button" type = "submit">
+			<input id="button" type = "submit">
+		</div>
 		</form>
 	</div>
 	<div id = "footer">
