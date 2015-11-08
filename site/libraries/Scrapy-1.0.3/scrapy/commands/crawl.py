@@ -6,7 +6,7 @@ from scrapy.exceptions import UsageError
 
 class Command(ScrapyCommand):
 
-    requires_project = True
+    requires_project = False
 
     def syntax(self):
         return "[options] <spider>"

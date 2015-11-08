@@ -1,4 +1,12 @@
-<!DOCTYPE html>
+<?php
+    echo "---post test----";
+    if(isset($_POST)){
+        print_r($_POST["bookName"] . "\n");
+	    print_r($_POST["bookRental"] . "\n");
+	    print_r("new book = " . $_POST["bookNew"] . "\n");
+	}
+?>
+<html>
 <head>
 	<link rel="stylesheet" type="text/css" href="../css/stylesheet.css" />
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
@@ -35,3 +43,4 @@
 	<div id = "footer">
 	</div>
 </body>
+</html>

@@ -6,8 +6,10 @@
 #
 # Author: Jacob Cole
 
-import time#debug
+import time
+import urllib2, urllib
 import scrapy
+from scrapy.selector import HtmlXPathSelector
 from scrapy.contrib.spiders import Rule, CrawlSpider
 from selenium import webdriver
 from selenium.webdriver.common.by import By
@@ -18,15 +20,19 @@ class VoertmansSpider(scrapy.Spider):
 	start_urls = (
 		"http://voertmans.textbooktech.com/textbook",
 	)
-	defaultSectionChoice = 41334
 
 	def __init__(self, departmentChoice, courseChoice, sectionChoice):
 		self.departmentChoice = departmentChoice
 		self.courseChoice = courseChoice
 		self.sectionChoice = sectionChoice
 
+	def convertToScrapyObject(self, source):
+		sou2 = source.encode('ascii','ignore')
+		hxs = HtmlXPathSelector(text=sou2)
+		return hxs
+
 	def submitForm(self, response):
-		driver = webdriver.Firefox()
+		driver = webdriver.Remote("http://localhost:4444/wd/hub", webdriver.DesiredCapabilities.HTMLUNITWITHJS)
 		driver.get(response.url)
 
 		#select UNT from dropdown
@@ -59,14 +65,26 @@ class VoertmansSpider(scrapy.Spider):
 
 		driver.find_element_by_id("search-button").click()
 
-		time.sleep(10)#debug
-		self.pageSource = driver.page_source
+		time.sleep(5)#debug
 
+		selSource = driver.page_source
 		driver.quit()
 
-	def insertIntoDB():
-		pass
+		return self.convertToScrapyObject(selSource)
+
+	def sendAsPost(self, bookName, bookChoice):
+		mydata = [('bookName',"'" + bookName[0] + "'"), ('bookNew',"'" + bookChoice[0] + "'"), ('bookRental',"'" + bookChoice[1] + "'")]
+		mydata = urllib.urlencode(mydata)
+		path = 'http://localhost/csce4444/site/php/postDataFromScrapy.php'
+		req = urllib2.Request(path, mydata)
+		req.add_header("Content-type", "application/x-www-form-urlencoded")
 
 	def parse(self, response):
-		self.submitForm(response)
-		self.insertIntoDB()
+		selector = self.submitForm(response)
+
+		print selector.select('//tr[@class="first last odd"]').extract()
+
+		bookName = selector.select('//div[@class="book-name"]/text()').extract()
+		bookChoice = selector.select('//td[@class="input-box book-choices a-right"]/select/option/text()').extract()
+
+		self.sendAsPost(bookName, bookChoice)
