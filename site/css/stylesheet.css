@@ -59,7 +59,7 @@ body{
 	position: relative;
 	margin:auto;
 	width: 100%;
-	height: 55em;
+	height: 850px;
 	background-color: #F4EBC3;
 }
 
@@ -105,13 +105,16 @@ select{
 
 
 #bookinfo{
+	width:804px;
+	margin:auto;
 }
 
 #generalinfo{
-	height:200px;
+	height:180px;
 	width:802px;
 	background-color:#e5ffff;
 	clear:right;
+	border-top:none;
 }
 
 #infodivide{
@@ -128,6 +131,7 @@ select{
 	clear:right;
 	background-color:white;
 	border:solid black 1px;
+	margin:auto;
 }
 
 /*
