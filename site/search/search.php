@@ -21,6 +21,8 @@
 				<h1>Info</h1>
 				<p>
 					<?php
+					//check only book name. book name should always be present if a book is available.
+					if(isset($_SESSION["bookName"])){
 						if(isset($_SESSION["bookName"]))
 							echo "Name: " . $_SESSION["bookName"];
 							echo "<br/>";
@@ -29,6 +31,9 @@
 							echo "<br/>";
 						if(isset($_SESSION["bookNew"]))
 							echo "New: " . $_SESSION["bookNew"];
+					} else {
+						echo "Book not available.";
+					}
 					?>
 				</p>
 			</div>
@@ -51,3 +56,6 @@
 	</div>
 </body>
 </html>
+<?php
+	session_destroy();
+?>

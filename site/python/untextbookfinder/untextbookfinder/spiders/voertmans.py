@@ -73,19 +73,15 @@ class VoertmansSpider(scrapy.Spider):
 		return self.convertToScrapyObject(selSource)
 
 	def sendAsPost(self, bookName, bookChoice):
-		#debugFile = open("debug.text", "a")
 		name = bookName[0].rstrip('\r\n')
 		new = bookChoice[0].rstrip('\r\n')
 		rental = bookChoice[1].rstrip('\r\n')
 		result = {'bookName': name, 'bookNew': new, 'bookRental': rental}
 		jsonResult = json.dumps(result).rstrip('\r\n')
 		print jsonResult
-		#debugFile.write(page)
 
 	def parse(self, response):
 		selector = self.submitForm(response)
-
-		#print selector.select('//tr[@class="first last odd"]').extract()
 
 		bookName = selector.select('//div[@class="book-name"]/text()').extract()
 		bookChoice = selector.select('//td[@class="input-box book-choices a-right"]/select/option/text()').extract()
