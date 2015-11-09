@@ -1,10 +1,5 @@
 <?php
-    echo "---post test----";
-    if(isset($_POST)){
-        print_r($_POST["bookName"] . "\n");
-	    print_r($_POST["bookRental"] . "\n");
-	    print_r("new book = " . $_POST["bookNew"] . "\n");
-	}
+	session_start();
 ?>
 <html>
 <head>
@@ -24,6 +19,18 @@
 		<div id="bookinfo">
 			<div id="generalinfo" class="bookstore">
 				<h1>Info</h1>
+				<p>
+					<?php
+						if(isset($_SESSION["bookName"]))
+							echo "Name: " . $_SESSION["bookName"];
+							echo "<br/>";
+						if(isset($_SESSION["bookRental"]))
+							echo "Rent: " . $_SESSION["bookRental"];
+							echo "<br/>";
+						if(isset($_SESSION["bookNew"]))
+							echo "New: " . $_SESSION["bookNew"];
+					?>
+				</p>
 			</div>
 			<div id="infodivide"></div>
 			<div id="voertmans" class="bookstore">

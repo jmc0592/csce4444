@@ -7,4 +7,13 @@ UNTextbook Finder Manual
 	
 	- The 'Find Textbook' page presents 4 rows of search criteria allowing you to search for 4 books at once. 
 	Each of these rows a Term, Department, Course, and Section field.
-	
+
+- Before developement testing
+
+    - Selenium Server
+        - This is needed to use the HtmlUnit Driver
+        - run 'java -jar selenium-server-standalone-2.48.2.jar' in my main site/ directory
+
+    - Scrapy 
+        - ensure scrapy is installed on your machine
+        - change the path of the Scrapy command path in the processForm.php file to your machines path

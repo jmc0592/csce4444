@@ -6,7 +6,7 @@
 #
 # Author: Jacob Cole
 
-import time
+import time, json
 import urllib2, urllib
 import scrapy
 from scrapy.selector import HtmlXPathSelector
@@ -39,7 +39,7 @@ class VoertmansSpider(scrapy.Spider):
 		schoolOption = driver.find_element_by_xpath("//select[@id='school_selection']/option[@value='6']")
 		schoolOption.click()
 
-		driver.implicitly_wait(10)#set to wait for 10 seconds for subsequent element's options to appear
+		driver.implicitly_wait(5)#set to wait for 10 seconds for subsequent element's options to appear
 
 		#select term from dropdown
 		termOption = driver.find_element_by_xpath("//select[@id='term_selection']/option[@value='25']")
@@ -73,16 +73,19 @@ class VoertmansSpider(scrapy.Spider):
 		return self.convertToScrapyObject(selSource)
 
 	def sendAsPost(self, bookName, bookChoice):
-		mydata = [('bookName',"'" + bookName[0] + "'"), ('bookNew',"'" + bookChoice[0] + "'"), ('bookRental',"'" + bookChoice[1] + "'")]
-		mydata = urllib.urlencode(mydata)
-		path = 'http://localhost/csce4444/site/php/postDataFromScrapy.php'
-		req = urllib2.Request(path, mydata)
-		req.add_header("Content-type", "application/x-www-form-urlencoded")
+		#debugFile = open("debug.text", "a")
+		name = bookName[0].rstrip('\r\n')
+		new = bookChoice[0].rstrip('\r\n')
+		rental = bookChoice[1].rstrip('\r\n')
+		result = {'bookName': name, 'bookNew': new, 'bookRental': rental}
+		jsonResult = json.dumps(result).rstrip('\r\n')
+		print jsonResult
+		#debugFile.write(page)
 
 	def parse(self, response):
 		selector = self.submitForm(response)
 
-		print selector.select('//tr[@class="first last odd"]').extract()
+		#print selector.select('//tr[@class="first last odd"]').extract()
 
 		bookName = selector.select('//div[@class="book-name"]/text()').extract()
 		bookChoice = selector.select('//td[@class="input-box book-choices a-right"]/select/option/text()').extract()
