@@ -42,6 +42,7 @@ body{
 	background-color: darkgreen;
 	border-style: solid;
 	border-color: darkgreen;
+	margin-bottom:15px;
 }
 
 #left p{
@@ -77,6 +78,7 @@ body{
 
 .selectmenus{
 	margin-top:15px;
+	margin-bottom:15px;
 }
 
 select{
