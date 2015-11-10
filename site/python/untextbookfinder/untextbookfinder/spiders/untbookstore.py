@@ -23,6 +23,9 @@ class UntbookstoreSpider(scrapy.Spider):
         hxs = HtmlXPathSelector(text=sou2)
         return hxs
 
+    def fillOutForm(self):
+        pass
+
     def parse(self, response):
         driver = webdriver.Firefox()
         driver.get(response.url)
@@ -38,42 +41,35 @@ class UntbookstoreSpider(scrapy.Spider):
         hxs = self.convertToScrapyObject(driver.page_source)
         departments = hxs.select('//li[@class="deptColumn"]/ul/li')
 
-        #loop through each department to get each course
+        #fill out form with all combinations of choices
         i = 1
         for dep in departments:
-            h4Text = dep.xpath('.//text()').extract()
+            depName = dep.xpath('.//text()').extract()
             if(i != 1):
                 driver.find_element_by_xpath("//ul[@class='columnLabelLayout']/li[2]/input").clear()
             element_to_hover_over = driver.find_element_by_xpath("//ul[@class='columnLabelLayout']/li[2]/input")
             hover = ActionChains(driver).move_to_element(element_to_hover_over)
             hover.perform()
             element_to_hover_over.click()
-            print "-----clicked dept input-----"
 
-            #driver.implicitly_wait(3)
             time.sleep(2)
 
             deptToClick = driver.find_element_by_xpath("//ul[@class='columnLabelLayout']/li[2]/ul/li["+str(i)+"]")
             deptToClick.click()
-            print "-----clicked dept-----" + "i = " + str(i)
 
             time.sleep(2)
 
             selector = self.convertToScrapyObject(driver.page_source)
             courses = selector.select('//ul[@class="columnLabelLayout"]/li[3]/ul/li')
-            print "-----got the course list------"
-            print "course amount = " + str(len(courses))
             j = 1
             for course in courses:
-                h4Text2 = course.xpath('.//text()').extract()
-                print h4Text2[0] + " -------h4Text2"
+                courseName = course.xpath('.//text()').extract()
                 if(j != 1):
                     driver.find_element_by_xpath("//ul[@class='columnLabelLayout']/li[3]/input").clear()
                 element_to_hover_over2 = driver.find_element_by_xpath("//ul[@class='columnLabelLayout']/li[3]/input")
                 hover = ActionChains(driver).move_to_element(element_to_hover_over2)
                 hover.perform()
                 element_to_hover_over2.click()
-                print "-----clicked course input-----"
 
                 time.sleep(2)
 
@@ -82,7 +78,26 @@ class UntbookstoreSpider(scrapy.Spider):
 
                 time.sleep(2)
 
+                selector = self.convertToScrapyObject(driver.page_source)
+                sections = selector.select('//ul[@class="columnLabelLayout"]/li[4]/ul/li')
+                k = 1
+                for section in sections:
+                    sectionName = section.xpath('.//text()').extract()
+                    if(k != 1):
+                        driver.find_element_by_xpath("//ul[@class='columnLabelLayout']/li[4]/input[2]").clear()
+                    element_to_hover_over3 = driver.find_element_by_xpath("//ul[@class='columnLabelLayout']/li[4]/input[2]")
+                    hover = ActionChains(driver).move_to_element(element_to_hover_over3)
+                    hover.perform()
+                    element_to_hover_over3.click()
+
+                    time.sleep(2)
+
+                    sectionToClick = driver.find_element_by_xpath("//ul[@class='columnLabelLayout']/li[4]/ul/li["+str(k)+"]")
+                    sectionToClick.click()
+
+                    time.sleep(2)
+
+                    k = k + 1
                 j = j + 1
-            print "----done printing course list for this dept-----"
             i = i + 1
         driver.quit()
