@@ -2,7 +2,6 @@ import time#debug
 import scrapy
 from scrapy.selector import HtmlXPathSelector
 from scrapy.http import HtmlResponse
-from scrapy.contrib.spiders import Rule, CrawlSpider
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 

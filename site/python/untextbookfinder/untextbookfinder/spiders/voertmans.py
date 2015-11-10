@@ -65,7 +65,7 @@ class VoertmansSpider(scrapy.Spider):
 
 		driver.find_element_by_id("search-button").click()
 
-		time.sleep(5)#debug
+		time.sleep(5)
 
 		selSource = driver.page_source
 		driver.quit()
