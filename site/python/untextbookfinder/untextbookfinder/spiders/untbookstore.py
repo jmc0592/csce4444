@@ -31,7 +31,7 @@ class UntbookstoreSpider(scrapy.Spider):
     globeI = 0
     globeJ = 0
 
-    classInfo = UntextbookfinderItem()
+    BookClass = {'department': '', 'course': '', 'section': ''}
 
     def convertToScrapyObject(self, source):
         sou2 = source.encode('ascii','ignore')
@@ -76,23 +76,26 @@ class UntbookstoreSpider(scrapy.Spider):
         isbn = bookRequired.select('.//ul/li[3]/text()').extract()
         isbnB = isbn[1].strip()
         print "Debug: -----isbn = " + isbnB + "-------"
-        name = bookRequired.select('.//h1[@id="skipNavigationToThisElement"]/a/text()').extract()
-        nameB = name[0].lstrip()
-        nameB2 = nameB.rstrip()
-        print "Debug: -----name = " + nameB + "------"
-        priceNew = bookRequired.select('.//li[@class="selectableBook" and contains(text(), "BUY NEW")]/span/text()').extract()
-        priceNewB = priceNew[0].lstrip()
-        priceNewB2 = priceNewB.strip()
-        priceNewB3 = re.sub('[$]', '', priceNewB2)
-        print "Debug: -----priceNew = " + priceNewB3 + "------"
-
         try:
-            Book.Query.get(department=UntbookstoreSpider.classInfo['department'], course=UntbookstoreSpider.classInfo['course'], 
-                section=UntbookstoreSpider.classInfo['section'])
-        except QueryResourceDoesNotExist:
-            book = Book(isbn=int(isbnB), name=nameB2, priceNew=float(priceNewB3), department=UntbookstoreSpider.classInfo['department'], 
-                course=UntbookstoreSpider.classInfo['course'], section=UntbookstoreSpider.classInfo['section'])
-            book.save()
+            name = bookRequired.select('.//h1[@id="skipNavigationToThisElement"]/a/text()').extract()
+            nameB = name[0].lstrip()
+            nameB2 = nameB.rstrip()
+            print "Debug: -----name = " + nameB + "------"
+            priceNew = bookRequired.select('.//li[@class="selectableBook" and contains(text(), "BUY NEW")]/span/text()').extract()
+            priceNewB = priceNew[0].lstrip()
+            priceNewB2 = priceNewB.strip()
+            priceNewB3 = re.sub('[$]', '', priceNewB2)
+            print "Debug: -----priceNew = " + priceNewB3 + "------"
+
+            try:
+                existingBook = Book.Query.get(department=UntbookstoreSpider.BookClass['department'], course=UntbookstoreSpider.BookClass['course'], 
+                    section=UntbookstoreSpider.BookClass['section'])
+            except QueryResourceDoesNotExist:
+                book = Book(isbn=int(isbnB), name=nameB2, priceNew=float(priceNewB3), department=UntbookstoreSpider.BookClass['department'], 
+                    course=UntbookstoreSpider.BookClass['course'], section=UntbookstoreSpider.BookClass['section'])
+                book.save()
+        except IndexError:
+            print "Materials pending."
 
     def parse(self, response):
         self.driver = webdriver.Firefox()
@@ -112,9 +115,10 @@ class UntbookstoreSpider(scrapy.Spider):
 
         #fill out form with all combinations of choices
         UntbookstoreSpider.globeI = i = 1
-        for dep in departments:
+        for i, dep in enumerate(departments):
             depName = dep.xpath('.//text()').extract()
-            UntbookstoreSpider.classInfo['department'] = depName[0]
+            print "----[Debug]: depName = " + depName[0] + "----"
+            UntbookstoreSpider.BookClass['department'] = depName[0]
             if(i != 1):
                 self.driver.find_element_by_xpath("//ul[@class='columnLabelLayout']/li[2]/input").clear()
             self.element_to_hover_over = self.driver.find_element_by_xpath("//ul[@class='columnLabelLayout']/li[2]/input")
@@ -130,10 +134,10 @@ class UntbookstoreSpider(scrapy.Spider):
 
             selector = self.convertToScrapyObject(self.driver.page_source)
             courses = selector.select('//ul[@class="columnLabelLayout"]/li[3]/ul/li')
-            UntbookstoreSpider.globeJ = j = 3 #switch back after dept is done
-            for course in courses:
+            UntbookstoreSpider.globeJ = j = 1 #switch back after dept is done
+            for j, course in enumerate(courses):
                 courseName = course.xpath('.//text()').extract()
-                UntbookstoreSpider.classInfo['course'] = courseName[0]
+                UntbookstoreSpider.BookClass['course'] = courseName[0]
                 if(j != 1):
                     self.driver.find_element_by_xpath("//ul[@class='columnLabelLayout']/li[3]/input").clear()
                 self.element_to_hover_over2 = self.driver.find_element_by_xpath("//ul[@class='columnLabelLayout']/li[3]/input")
@@ -150,9 +154,9 @@ class UntbookstoreSpider(scrapy.Spider):
                 selector = self.convertToScrapyObject(self.driver.page_source)
                 sections = selector.select('//ul[@class="columnLabelLayout"]/li[4]/ul/li')
                 k = 1
-                for section in sections:
+                for k, section in enumerate(sections):
                     sectionName = section.xpath('.//text()').extract()
-                    UntbookstoreSpider.classInfo['section'] = sectionName[0]
+                    UntbookstoreSpider.BookClass['section'] = sectionName[0]
                     if(k != 1):
                         self.driver.find_element_by_xpath("//ul[@class='columnLabelLayout']/li[4]/input[2]").clear()
                     self.element_to_hover_over3 = self.driver.find_element_by_xpath("//ul[@class='columnLabelLayout']/li[4]/input[2]")
