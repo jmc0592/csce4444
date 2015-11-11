@@ -18,9 +18,10 @@
 import time
 from selenium.common.exceptions import NoSuchElementException
 from selenium.common.exceptions import TimeoutException
+from selenium.common.exceptions import ElementNotVisibleException
 
 POLL_FREQUENCY = 0.5  # How long to sleep inbetween calls to the method
-IGNORED_EXCEPTIONS = (NoSuchElementException,)  # exceptions ignored during calls to the method
+IGNORED_EXCEPTIONS = (NoSuchElementException, ElementNotVisibleException)  # exceptions ignored during calls to the method
 
 
 class WebDriverWait(object):
