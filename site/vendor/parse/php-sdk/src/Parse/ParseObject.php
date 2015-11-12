@@ -664,6 +664,7 @@ class ParseObject implements Encodable
      */
     public function _mergeMagicFields(&$data)
     {
+        date_default_timezone_set('America/Chicago');
         if (isset($data['objectId'])) {
             $this->objectId = $data['objectId'];
             unset($data['objectId']);

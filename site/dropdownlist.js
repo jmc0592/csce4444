@@ -6,7 +6,7 @@ document.bookform.course.options.length = 0;
  switch (listindex)
  {
 
-case "198" :
+case "198|ACCT" :
 document.bookform.course.options[0]=new Option("Select Sub-Category","");
 document.bookform.course.options[1]=new Option("2010", "2010");
 document.bookform.course.options[2]=new Option("2020", "2020");
@@ -45,7 +45,7 @@ document.bookform.course.options[34]=new Option("6910", "6910");
 document.bookform.course.options[35]=new Option("6940", "6940");
 document.bookform.course.options[36]=new Option("6950", "6950");
 break;
-case "259" :
+case "259|ADES" :
 document.bookform.course.options[0]=new Option("Select Sub-Category","");
 document.bookform.course.options[1]=new Option("1500", "1500");
 document.bookform.course.options[2]=new Option("1510", "1510");
@@ -76,7 +76,7 @@ document.bookform.course.options[26]=new Option("5523", "5523");
 document.bookform.course.options[27]=new Option("5530", "5530");
 document.bookform.course.options[28]=new Option("5630", "5630");
 break;
-case "250" :
+case "250|AEAH" :
 document.bookform.course.options[0]=new Option("Select Sub-Category","");
 document.bookform.course.options[1]=new Option("1750", "1750");
 document.bookform.course.options[2]=new Option("3753", "3753");
@@ -117,14 +117,14 @@ document.bookform.course.options[36]=new Option("5849", "5849");
 document.bookform.course.options[37]=new Option("5942", "5942");
 document.bookform.course.options[38]=new Option("5945", "5945");
 break;
-case "377" :
+case "377|AECO" :
 document.bookform.course.options[0]=new Option("Select Sub-Category","");
 document.bookform.course.options[1]=new Option("5900", "5900");
 document.bookform.course.options[2]=new Option("5910", "5910");
 document.bookform.course.options[3]=new Option("5930", "5930");
 document.bookform.course.options[4]=new Option("5950", "5950");
 break;
-case "189" :
+case "189|AGER" :
 document.bookform.course.options[0]=new Option("Select Sub-Category","");
 document.bookform.course.options[1]=new Option("3480", "3480");
 document.bookform.course.options[2]=new Option("4060", "4060");

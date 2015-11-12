@@ -1,5 +1,6 @@
 <?php
 	session_start();
+	include '../php/getUntData.php';
 ?>
 <html>
 <head>
@@ -22,15 +23,17 @@
 				<p>
 					<?php
 					//check only book name. book name should always be present if a book is available.
-					if(isset($_SESSION["bookName"])){
-						if(isset($_SESSION["bookName"]))
-							echo "Name: " . $_SESSION["bookName"];
+					$deptArray = explode("|", $_POST["department"]);
+					$deptNumber = $deptArray[0];
+					$deptName = $deptArray[1];
+					queryDataUnt($deptName, $_POST["course"]);
+					if(isset($GLOBALS["name"])){
+						if(isset($GLOBALS["name"]))
+							echo "Name: " . $GLOBALS["name"];
 							echo "<br/>";
-						if(isset($_SESSION["bookRental"]))
-							echo "Rent: " . $_SESSION["bookRental"];
+						if(isset($GLOBALS["isbn"]))
+							echo "ISBN: " . $GLOBALS["isbn"];
 							echo "<br/>";
-						if(isset($_SESSION["bookNew"]))
-							echo "New: " . $_SESSION["bookNew"];
 					} else {
 						echo "Book not available.";
 					}
@@ -43,6 +46,11 @@
 			</div>
 			<div id="unt" class="bookstore">
 				<h1>UNT Bookstore</h1>
+				<p>
+					<?php if(isset($GLOBALS["priceNewUnt"])) : ?>
+						New Price - $<?=$GLOBALS["priceNewUnt"];?>
+					<?php endif;?>
+				</p>
 			</div>
 			<div id="chegg" class="bookstore">
 				<h1>Chegg</h1>
