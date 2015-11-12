@@ -1,6 +1,8 @@
 # -*- coding: utf-8 -*-
 # Author: Jacob Cole
 # Class for scraping all books from the UNT bookstore
+# This is only ran to obtain book prices to insert into our database. It will not be ran every time a book is selected. 
+	# So debug statements are okay and helpful if the script fails.
 import time, sys, gc
 import scrapy
 import re
@@ -19,178 +21,193 @@ from selenium.common.exceptions import TimeoutException, NoSuchElementException
 from selenium.webdriver.common.action_chains import ActionChains
 
 class Book(Object):
-    pass
+	pass
 
 class UntbookstoreSpider(scrapy.Spider):
-    name = "untbookstore"
-    allowed_domains = ["unt.bncollege.com"]
-    start_urls = (
-    	'http://unt.bncollege.com/webapp/wcs/stores/servlet/TBWizardView?catalogId=10001&langId=-1&storeId=71237',
-    )
+	name = "untbookstore"
+	allowed_domains = ["unt.bncollege.com"]
+	start_urls = (
+		'http://unt.bncollege.com/webapp/wcs/stores/servlet/TBWizardView?catalogId=10001&langId=-1&storeId=71237',
+	)
 
-    globeI = 0
-    globeJ = 0
+	globeI = 0
+	globeJ = 0
 
-    BookClass = {'department': '', 'course': '', 'section': ''}
+	BookClass = {'department': '', 'course': '', 'section': ''}
 
-    def convertToScrapyObject(self, source):
-        sou2 = source.encode('ascii','ignore')
-        hxs = HtmlXPathSelector(text=sou2)
-        return hxs
+	def convertToScrapyObject(self, source):
+		sou2 = source.encode('ascii','ignore')
+		hxs = HtmlXPathSelector(text=sou2)
+		return hxs
 
-    def refillOutForm(self):
-        self.termDropDown = self.driver.find_element_by_xpath("//div[@class='bncbSelectBox termHeader']")
-        self.termDropDown.click()
+	def refillOutForm(self):
+		self.termDropDown = self.driver.find_element_by_xpath("//div[@class='bncbSelectBox termHeader']")
+		self.termDropDown.click()
 
-        self.termOption = self.driver.find_element_by_xpath('//li[@class="bncbOptionItem termOption" and text()="FALL 2015"]')
-        self.termOption.click()
+		self.termOption = self.driver.find_element_by_xpath('//li[@class="bncbOptionItem termOption" and text()="FALL 2015"]')
+		self.termOption.click()
 
-        self.element_to_hover_over = self.driver.find_element_by_xpath("//ul[@class='columnLabelLayout']/li[2]/input")
-        self.hoverDept = ActionChains(self.driver).move_to_element(self.element_to_hover_over)
-        self.hoverDept.perform()
-        self.element_to_hover_over.click()
+		self.element_to_hover_over = self.driver.find_element_by_xpath("//ul[@class='columnLabelLayout']/li[2]/input")
+		self.hoverDept = ActionChains(self.driver).move_to_element(self.element_to_hover_over)
+		self.hoverDept.perform()
+		self.element_to_hover_over.click()
 
-        wait = WebDriverWait(self.driver, 10)
-        self.deptToClick = wait.until(EC.presence_of_element_located((By.XPATH,"//ul[@class='columnLabelLayout']/li[2]/ul/li["+str(UntbookstoreSpider.globeI)+"]")))
+		wait = WebDriverWait(self.driver, 10)
+		self.deptToClick = wait.until(EC.presence_of_element_located((By.XPATH,"//ul[@class='columnLabelLayout']/li[2]/ul/li["+str(UntbookstoreSpider.globeI+1)+"]")))
 
-        self.deptToClick.click()
+		self.deptToClick.click()
 
-        time.sleep(2)   
+		time.sleep(2)   
 
-        self.element_to_hover_over2 = self.driver.find_element_by_xpath("//ul[@class='columnLabelLayout']/li[3]/input")
-        self.hoverCourse = ActionChains(self.driver).move_to_element(self.element_to_hover_over2)
-        self.hoverCourse.perform()
-        self.element_to_hover_over2.click()
+		self.element_to_hover_over2 = self.driver.find_element_by_xpath("//ul[@class='columnLabelLayout']/li[3]/input")
+		self.hoverCourse = ActionChains(self.driver).move_to_element(self.element_to_hover_over2)
+		self.hoverCourse.perform()
+		self.element_to_hover_over2.click()
 
-        wait = WebDriverWait(self.driver, 10)
-        self.courseToClick = wait.until(EC.visibility_of_element_located((By.XPATH,"//ul[@class='columnLabelLayout']/li[3]/ul/li["+str(UntbookstoreSpider.globeJ)+"]")))
+		wait = WebDriverWait(self.driver, 10)
+		self.courseToClick = wait.until(EC.visibility_of_element_located((By.XPATH,"//ul[@class='columnLabelLayout']/li[3]/ul/li["+str(UntbookstoreSpider.globeJ+1)+"]")))
 
-        self.courseToClick.click()
+		self.courseToClick.click()
 
-        time.sleep(2)   
+		time.sleep(2)   
 
-    def insertIntoParse(self):
-        print "-----page source from insertIntoDb-------"
-        selector = self.convertToScrapyObject(self.driver.page_source)
-        bookRequired = selector.select('//div[@class="book-list"]')
-        isbn = bookRequired.select('.//ul/li[3]/text()').extract()
-        isbnB = isbn[1].strip()
-        print "Debug: -----isbn = " + isbnB + "-------"
-        try:
-            name = bookRequired.select('.//h1[@id="skipNavigationToThisElement"]/a/text()').extract()
-            nameB = name[0].lstrip()
-            nameB2 = nameB.rstrip()
-            print "Debug: -----name = " + nameB + "------"
-            priceNew = bookRequired.select('.//li[@class="selectableBook" and contains(text(), "BUY NEW")]/span/text()').extract()
-            priceNewB = priceNew[0].lstrip()
-            priceNewB2 = priceNewB.strip()
-            priceNewB3 = re.sub('[$]', '', priceNewB2)
-            print "Debug: -----priceNew = " + priceNewB3 + "------"
+	def insertIntoParse(self):
 
-            try:
-                existingBook = Book.Query.get(department=UntbookstoreSpider.BookClass['department'], course=UntbookstoreSpider.BookClass['course'], 
-                    section=UntbookstoreSpider.BookClass['section'])
-            except QueryResourceDoesNotExist:
-                book = Book(isbn=int(isbnB), name=nameB2, priceNew=float(priceNewB3), department=UntbookstoreSpider.BookClass['department'], 
-                    course=UntbookstoreSpider.BookClass['course'], section=UntbookstoreSpider.BookClass['section'])
-                book.save()
-        except IndexError:
-            print "Materials pending."
+		selector = self.convertToScrapyObject(self.driver.page_source)
+		bookRequired = selector.select('//div[@class="book-list"]')
+		try:
+			isbn = bookRequired.select('.//ul/li[3]/text()').extract()
+			# for some reason the indexes vary with having the isbn or not. possibly due to white space
+			try:
+				isbnB = isbn[1].strip()
+			except ValueError:
+				isbnB = isbn[0].strip()
 
-    def parse(self, response):
-        self.driver = webdriver.Firefox()
-        self.driver.get(response.url)
+			print "[Debug][insertIntoParse()]: -----isbn = " + isbnB + "-------"
+			name = bookRequired.select('.//h1[@id="skipNavigationToThisElement"]/a/text()').extract()
+			nameB = name[0].lstrip()
+			nameB2 = nameB.rstrip()
+			print "[Debug][insertIntoParse()]: -----name = " + nameB + "------"
+			priceNew = bookRequired.select('.//li[@class="selectableBook" and contains(text(), "BUY NEW")]/span/text()').extract()
+			priceNewB = priceNew[0].lstrip()
+			priceNewB2 = priceNewB.strip()
+			priceNewB3 = re.sub('[$]', '', priceNewB2)
+			print "[Debug][insertIntoParse()]: -----priceNew = " + priceNewB3 + "------"
+			print "[Debug][insertIntoParse()]: ------" + UntbookstoreSpider.BookClass['department'] + " " + UntbookstoreSpider.BookClass['course'] + " " + UntbookstoreSpider.BookClass['section']
+			
+			try:
+				existingBook = Book.Query.get(department=UntbookstoreSpider.BookClass['department'], course=UntbookstoreSpider.BookClass['course'], 
+					section=UntbookstoreSpider.BookClass['section'])
+			except QueryResourceDoesNotExist:
+				book = Book(isbn=int(isbnB), name=nameB2, priceNew=float(priceNewB3), department=UntbookstoreSpider.BookClass['department'], 
+					course=UntbookstoreSpider.BookClass['course'], section=UntbookstoreSpider.BookClass['section'])
+				book.save()
+			
+		except IndexError:
+			print "Materials pending."
 
-        self.termDropDown = self.driver.find_element_by_xpath("//div[@class='bncbSelectBox termHeader']")
-        self.termDropDown.click()
+	def parse(self, response):
+		self.driver = webdriver.Firefox()
+		self.driver.get(response.url)
 
-        self.termOption = self.driver.find_element_by_xpath('//li[@class="bncbOptionItem termOption" and text()="FALL 2015"]')
-        self.termOption.click()
+		self.termDropDown = self.driver.find_element_by_xpath("//div[@class='bncbSelectBox termHeader']")
+		self.termDropDown.click()
 
-        time.sleep(1)
+		self.termOption = self.driver.find_element_by_xpath('//li[@class="bncbOptionItem termOption" and text()="FALL 2015"]')
+		self.termOption.click()
+
+		time.sleep(1)
 
 
-        hxs = self.convertToScrapyObject(self.driver.page_source)
-        departments = hxs.select('//li[@class="deptColumn"]/ul/li')
+		hxs = self.convertToScrapyObject(self.driver.page_source)
+		departments = hxs.select('//ul[@class="columnLabelLayout"]/li[2]/ul/li//text()').extract()
 
-        #fill out form with all combinations of choices
-        UntbookstoreSpider.globeI = i = 1
-        for dep in departments:
-            depName = dep.xpath('.//text()').extract()
-            print "----[Debug]: depName = " + depName[0] + "----"
-            UntbookstoreSpider.BookClass['department'] = depName[0]
-            if(i != 1):
-                self.driver.find_element_by_xpath("//ul[@class='columnLabelLayout']/li[2]/input").clear()
-            #hover and click input element
-            self.element_to_hover_over = self.driver.find_element_by_xpath("//ul[@class='columnLabelLayout']/li[2]/input")
-            self.hoverDept = ActionChains(self.driver).move_to_element(self.element_to_hover_over)
-            self.hoverDept.perform()
-            self.element_to_hover_over.click()
+		print departments[0] + departments[1] + "-------------------"
 
-            #click department
-            wait = WebDriverWait(self.driver, 10)
-            self.deptToClick = wait.until(EC.presence_of_element_located((By.XPATH,"//ul[@class='columnLabelLayout']/li[2]/ul/li["+str(i)+"]")))
-            self.deptToClick.click()
+		#fill out form with all combinations of choices
+		i = 1
+		UntbookstoreSpider.globeI = i
+		while (i < len(departments)):
+			depName = departments[i]
+			print "----[Debug]: depName = " + depName + ". i = " + str(i) + "----"
+			UntbookstoreSpider.BookClass['department'] = depName
+			if(i != 0):
+				self.driver.find_element_by_xpath("//ul[@class='columnLabelLayout']/li[2]/input").clear()
+			#hover and click input element
+			self.element_to_hover_over = self.driver.find_element_by_xpath("//ul[@class='columnLabelLayout']/li[2]/input")
+			self.hoverDept = ActionChains(self.driver).move_to_element(self.element_to_hover_over)
+			self.hoverDept.perform()
+			self.element_to_hover_over.click()
 
-            time.sleep(2)
+			#click department
+			wait = WebDriverWait(self.driver, 10)
+			self.deptToClick = wait.until(EC.presence_of_element_located((By.XPATH,"//ul[@class='columnLabelLayout']/li[2]/ul/li["+str(i+1)+"]")))
+			self.deptToClick.click()
 
-            #obtain course list
-            selector = self.convertToScrapyObject(self.driver.page_source)
-            courses = selector.select('//ul[@class="columnLabelLayout"]/li[3]/ul/li')
-            UntbookstoreSpider.globeJ = j = 1
-            for course in courses:
-                courseName = course.xpath('.//text()').extract()
-                UntbookstoreSpider.BookClass['course'] = courseName[0]
-                if(j != 1):
-                    self.driver.find_element_by_xpath("//ul[@class='columnLabelLayout']/li[3]/input").clear()
-                self.element_to_hover_over2 = self.driver.find_element_by_xpath("//ul[@class='columnLabelLayout']/li[3]/input")
-                self.hoverCourse = ActionChains(self.driver).move_to_element(self.element_to_hover_over2)
-                self.hoverCourse.perform()
-                self.element_to_hover_over2.click()
+			time.sleep(2)
 
-                wait = WebDriverWait(self.driver, 10)
-                self.courseToClick = wait.until(EC.visibility_of_element_located((By.XPATH,"//ul[@class='columnLabelLayout']/li[3]/ul/li["+str(j)+"]")))
-                self.courseToClick.click()
+			#obtain course list
+			selector = self.convertToScrapyObject(self.driver.page_source)
+			courses = selector.select('//ul[@class="columnLabelLayout"]/li[3]/ul/li//text()').extract()
+			print courses[0] + courses[1] + "-------------------"
 
-                time.sleep(2)
+			j = 0
+			UntbookstoreSpider.globeJ = j
+			while (j < len(courses)):
+				courseName = courses[j]
+				print "----[Debug]: courseName = " + courseName + ". j = " + str(j) +"----"
+				UntbookstoreSpider.BookClass['course'] = courseName
+				if(j != 0):
+					self.driver.find_element_by_xpath("//ul[@class='columnLabelLayout']/li[3]/input").clear()
+				self.element_to_hover_over2 = self.driver.find_element_by_xpath("//ul[@class='columnLabelLayout']/li[3]/input")
+				self.hoverCourse = ActionChains(self.driver).move_to_element(self.element_to_hover_over2)
+				self.hoverCourse.perform()
+				self.element_to_hover_over2.click()
 
-                selector = self.convertToScrapyObject(self.driver.page_source)
-                sections = selector.select('//ul[@class="columnLabelLayout"]/li[4]/ul/li')
-                k = 1
-                for section in sections:
-                    sectionName = section.xpath('.//text()').extract()
-                    UntbookstoreSpider.BookClass['section'] = sectionName[0]
-                    if(k != 1):
-                        self.driver.find_element_by_xpath("//ul[@class='columnLabelLayout']/li[4]/input[2]").clear()
-                    self.element_to_hover_over3 = self.driver.find_element_by_xpath("//ul[@class='columnLabelLayout']/li[4]/input[2]")
-                    self.hoverSection = ActionChains(self.driver).move_to_element(self.element_to_hover_over3)
-                    self.hoverSection.perform()
-                    self.element_to_hover_over3.click()
+				wait = WebDriverWait(self.driver, 10)
+				self.courseToClick = wait.until(EC.visibility_of_element_located((By.XPATH,"//ul[@class='columnLabelLayout']/li[3]/ul/li["+str(j+1)+"]")))
+				self.courseToClick.click()
 
-                    wait = WebDriverWait(self.driver, 10)
-                    sectionToClick = wait.until(EC.presence_of_element_located((By.XPATH,"//ul[@class='columnLabelLayout']/li[4]/ul/li["+str(k)+"]")))
+				time.sleep(2)
 
-                    sectionToClick.click()
+				selector = self.convertToScrapyObject(self.driver.page_source)
+				sections = selector.select('//ul[@class="columnLabelLayout"]/li[4]/ul/li//text()').extract()
+				k = 0
+				while (k < len(sections)):
+					sectionName = sections[k]
+					print "----[Debug]: sectionName = " + sectionName + ". k = " + str(k) +"----"
+					UntbookstoreSpider.BookClass['section'] = sectionName
+					if(k != 0):
+						self.driver.find_element_by_xpath("//ul[@class='columnLabelLayout']/li[4]/input[2]").clear()
+					self.element_to_hover_over3 = self.driver.find_element_by_xpath("//ul[@class='columnLabelLayout']/li[4]/input[2]")
+					self.hoverSection = ActionChains(self.driver).move_to_element(self.element_to_hover_over3)
+					self.hoverSection.perform()
+					self.element_to_hover_over3.click()
 
-                    time.sleep(2)
+					wait = WebDriverWait(self.driver, 10)
+					sectionToClick = wait.until(EC.presence_of_element_located((By.XPATH,"//ul[@class='columnLabelLayout']/li[4]/ul/li["+str(k+1)+"]")))
 
-                    try:
-                        submitClick = self.driver.find_element_by_class_name("largeActiveBtn")
-                        submitClick.click()
-                        time.sleep(3)
-                        self.insertIntoParse()
-                        self.driver.back()
-                        time.sleep(5)
-                        self.refillOutForm()
-                    except NoSuchElementException:
-                        print "No book for this course available."
+					sectionToClick.click()
 
-                    k = k + 1
+					time.sleep(2)
 
-                j = j + 1
-                UntbookstoreSpider.globeJ = j
+					try:
+						submitClick = self.driver.find_element_by_class_name("largeActiveBtn")
+						submitClick.click()
+						time.sleep(3)
+						self.insertIntoParse()
+						self.driver.back()
+						time.sleep(5)
+						self.refillOutForm()
+					except NoSuchElementException:
+						print "No book for this course available."
 
-            i = i + 1
-            UntbookstoreSpider.globeI = i
+					k = k + 1
 
-        self.driver.quit()
+				j = j + 1
+				UntbookstoreSpider.globeJ = j
+
+			i = i + 1
+			UntbookstoreSpider.globeI = i
+
+		self.driver.quit()
