@@ -6,7 +6,7 @@ document.bookform.subcategory.options.length = 0;
  switch (listindex)
  {
 
-case "ACCT" :
+case "198" :
 document.bookform.subcategory.options[0]=new Option("Select Sub-Category","");
 document.bookform.subcategory.options[1]=new Option("2010", "2010");
 document.bookform.subcategory.options[2]=new Option("2020", "2020");
@@ -45,7 +45,7 @@ document.bookform.subcategory.options[34]=new Option("6910", "6910");
 document.bookform.subcategory.options[35]=new Option("6940", "6940");
 document.bookform.subcategory.options[36]=new Option("6950", "6950");
 break;
-case "ADES" :
+case "259" :
 document.bookform.subcategory.options[0]=new Option("Select Sub-Category","");
 document.bookform.subcategory.options[1]=new Option("1500", "1500");
 document.bookform.subcategory.options[2]=new Option("1510", "1510");
@@ -76,7 +76,7 @@ document.bookform.subcategory.options[26]=new Option("5523", "5523");
 document.bookform.subcategory.options[27]=new Option("5530", "5530");
 document.bookform.subcategory.options[28]=new Option("5630", "5630");
 break;
-case "AEAH" :
+case "250" :
 document.bookform.subcategory.options[0]=new Option("Select Sub-Category","");
 document.bookform.subcategory.options[1]=new Option("1750", "1750");
 document.bookform.subcategory.options[2]=new Option("3753", "3753");
@@ -117,14 +117,14 @@ document.bookform.subcategory.options[36]=new Option("5849", "5849");
 document.bookform.subcategory.options[37]=new Option("5942", "5942");
 document.bookform.subcategory.options[38]=new Option("5945", "5945");
 break;
-case "AECO" :
+case "377" :
 document.bookform.subcategory.options[0]=new Option("Select Sub-Category","");
 document.bookform.subcategory.options[1]=new Option("5900", "5900");
 document.bookform.subcategory.options[2]=new Option("5910", "5910");
 document.bookform.subcategory.options[3]=new Option("5930", "5930");
 document.bookform.subcategory.options[4]=new Option("5950", "5950");
 break;
-case "AGER" :
+case "189" :
 document.bookform.subcategory.options[0]=new Option("Select Sub-Category","");
 document.bookform.subcategory.options[1]=new Option("3480", "3480");
 document.bookform.subcategory.options[2]=new Option("4060", "4060");
@@ -146,7 +146,7 @@ document.bookform.subcategory.options[17]=new Option("5780", "5780");
 document.bookform.subcategory.options[18]=new Option("5840", "5840");
 document.bookform.subcategory.options[19]=new Option("5850", "5850");
 break;
-case "ANTH" :
+case "242" :
 document.bookform.subcategory.options[0]=new Option("Select Sub-Category","");
 document.bookform.subcategory.options[1]=new Option("1010", "1010");
 document.bookform.subcategory.options[2]=new Option("1100", "1100");
@@ -176,20 +176,20 @@ document.bookform.subcategory.options[25]=new Option("5800", "5800");
 document.bookform.subcategory.options[26]=new Option("5810", "5810");
 document.bookform.subcategory.options[27]=new Option("5810", "5810");
 break;
-case "ARBC" :
+case "309" :
 document.bookform.subcategory.options[0]=new Option("Select Sub-Category","");
 document.bookform.subcategory.options[1]=new Option("1010", "1010");
 document.bookform.subcategory.options[2]=new Option("2040", "2040");
 document.bookform.subcategory.options[3]=new Option("3060", "3060");
 break;
-case "ARCH" :
+case "185" :
 document.bookform.subcategory.options[0]=new Option("Select Sub-Category","");
 document.bookform.subcategory.options[1]=new Option("2800", "2800");
 document.bookform.subcategory.options[2]=new Option("2900", "2900");
 document.bookform.subcategory.options[3]=new Option("4620", "4620");
 document.bookform.subcategory.options[4]=new Option("5620", "5620");
 break;
-case "ART" :
+case "236" :
 document.bookform.subcategory.options[0]=new Option("Select Sub-Category","");
 document.bookform.subcategory.options[1]=new Option("1200", "1200");
 document.bookform.subcategory.options[2]=new Option("1300", "1300");
@@ -203,7 +203,7 @@ document.bookform.subcategory.options[9]=new Option("2350", "2350");
 document.bookform.subcategory.options[10]=new Option("2360", "2360");
 document.bookform.subcategory.options[11]=new Option("5700", "5700");
 break; 
-case "ASTU" :
+case "275" :
 document.bookform.subcategory.options[0]=new Option("Select Sub-Category","");
 document.bookform.subcategory.options[1]=new Option("2050", "2050");
 document.bookform.subcategory.options[2]=new Option("2120", "2120");
@@ -293,7 +293,7 @@ document.bookform.subcategory.options[84]=new Option("5330", "5330");
 document.bookform.subcategory.options[85]=new Option("5340", "5340");
 document.bookform.subcategory.options[86]=new Option("5350", "5350");
 break;
-case "ATTD" :
+case "220" :
 document.bookform.subcategory.options[0]=new Option("Select Sub-Category","");
 document.bookform.subcategory.options[1]=new Option("5100", "5100");
 document.bookform.subcategory.options[2]=new Option("5110", "5110");
@@ -309,7 +309,7 @@ document.bookform.subcategory.options[11]=new Option("6480", "6480");
 document.bookform.subcategory.options[12]=new Option("6900", "6900");
 document.bookform.subcategory.options[13]=new Option("6950", "6950");
 break;
-case "BCIS" :
+case "184" :
 document.bookform.subcategory.options[0]=new Option("Select Sub-Category","");
 document.bookform.subcategory.options[1]=new Option("2610", "2610");
 document.bookform.subcategory.options[2]=new Option("3610", "3610");
@@ -335,7 +335,7 @@ document.bookform.subcategory.options[21]=new Option("5680", "5680");
 document.bookform.subcategory.options[22]=new Option("5700", "5700");
 document.bookform.subcategory.options[23]=new Option("5740", "5740");
 break;
-case "BEHV" :
+case "199" :
 document.bookform.subcategory.options[0]=new Option("Select Sub-Category","");
 document.bookform.subcategory.options[1]=new Option("2300", "2300");
 document.bookform.subcategory.options[2]=new Option("2700", "2700");
@@ -362,7 +362,7 @@ document.bookform.subcategory.options[22]=new Option("5815", "5815");
 document.bookform.subcategory.options[23]=new Option("5900", "5900");
 document.bookform.subcategory.options[24]=new Option("5910", "5910");
 break;
-case "BIOC" :
+case "234" :
 document.bookform.subcategory.options[0]=new Option("Select Sub-Category","");
 document.bookform.subcategory.options[1]=new Option("3621", "3621");
 document.bookform.subcategory.options[2]=new Option("4540", "4540");
@@ -371,7 +371,7 @@ document.bookform.subcategory.options[4]=new Option("5680", "5680");
 document.bookform.subcategory.options[5]=new Option("5950", "5950");
 document.bookform.subcategory.options[6]=new Option("6630", "6630");
 break;
-case "BIOL" :
+case "228" :
 document.bookform.subcategory.options[0]=new Option("Select Sub-Category","");
 document.bookform.subcategory.options[1]=new Option("1000", "1000");
 document.bookform.subcategory.options[2]=new Option("1082", "1082");
@@ -435,7 +435,7 @@ document.bookform.subcategory.options[59]=new Option("5840", "5840");
 document.bookform.subcategory.options[60]=new Option("6710", "6710");
 document.bookform.subcategory.options[61]=new Option("6810", "6810");
 break;
-case "BLAW" :
+case "249" :
 document.bookform.subcategory.options[0]=new Option("Select Sub-Category","");
 document.bookform.subcategory.options[1]=new Option("2000", "2000");
 document.bookform.subcategory.options[2]=new Option("3430", "3430");
@@ -444,12 +444,12 @@ document.bookform.subcategory.options[4]=new Option("4770", "4770");
 document.bookform.subcategory.options[5]=new Option("5050", "5050");
 document.bookform.subcategory.options[6]=new Option("5400", "5400");
 break; 
-case "BMEN" :
+case "390" :
 document.bookform.subcategory.options[0]=new Option("Select Sub-Category","");
 document.bookform.subcategory.options[1]=new Option("1300", "1300");
 document.bookform.subcategory.options[2]=new Option("2980", "2980");
 break;
-case "BUSI" :
+case "192" :
 document.bookform.subcategory.options[0]=new Option("Select Sub-Category","");
 document.bookform.subcategory.options[1]=new Option("1340", "1340");
 document.bookform.subcategory.options[2]=new Option("2900", "2900");
@@ -461,13 +461,13 @@ document.bookform.subcategory.options[7]=new Option("6220", "6220");
 document.bookform.subcategory.options[8]=new Option("6450", "6450");
 document.bookform.subcategory.options[9]=new Option("6900", "6900");
 break;
-case "CBCM" :
+case "246" :
 document.bookform.subcategory.options[0]=new Option("Select Sub-Category","");
 document.bookform.subcategory.options[1]=new Option("2400", "2400");
 document.bookform.subcategory.options[2]=new Option("3500", "3500");
 document.bookform.subcategory.options[3]=new Option("3525", "3525");
 break;
-case "CECS" :
+case "221" :
 document.bookform.subcategory.options[0]=new Option("Select Sub-Category","");
 document.bookform.subcategory.options[1]=new Option("5010", "5010");
 document.bookform.subcategory.options[2]=new Option("5030", "5030");
@@ -501,7 +501,7 @@ document.bookform.subcategory.options[29]=new Option("6800", "6800");
 document.bookform.subcategory.options[30]=new Option("6900", "6900");
 document.bookform.subcategory.options[31]=new Option("6950", "6950");
 break;
-case "CHEM" :
+case "240" :
 document.bookform.subcategory.options[0]=new Option("Select Sub-Category","");
 document.bookform.subcategory.options[1]=new Option("1360", "1360");
 document.bookform.subcategory.options[2]=new Option("1400", "1400");
@@ -542,13 +542,13 @@ document.bookform.subcategory.options[36]=new Option("5570", "5570");
 document.bookform.subcategory.options[37]=new Option("5640", "5640");
 document.bookform.subcategory.options[38]=new Option("5930", "5930");
 break;
-case "CHIN" :
+case "316" :
 document.bookform.subcategory.options[0]=new Option("Select Sub-Category","");
 document.bookform.subcategory.options[1]=new Option("1010", "1010");
 document.bookform.subcategory.options[2]=new Option("2040", "2040");
 document.bookform.subcategory.options[3]=new Option("3040", "3040");
 break;
-case "CJUS" :
+case "183" :
 document.bookform.subcategory.options[0]=new Option("Select Sub-Category","");
 document.bookform.subcategory.options[1]=new Option("2100", "2100");
 document.bookform.subcategory.options[2]=new Option("2600", "2600");
@@ -585,7 +585,7 @@ document.bookform.subcategory.options[32]=new Option("5850", "5850");
 document.bookform.subcategory.options[33]=new Option("5900", "5900");
 document.bookform.subcategory.options[34]=new Option("5950", "5950");
 break;
-case "CMHT" :
+case "213" :
 document.bookform.subcategory.options[0]=new Option("Select Sub-Category","");
 document.bookform.subcategory.options[1]=new Option("3950", "3950");
 document.bookform.subcategory.options[2]=new Option("4750", "4750");
@@ -594,7 +594,7 @@ document.bookform.subcategory.options[4]=new Option("5400", "5400");
 document.bookform.subcategory.options[5]=new Option("5460", "5460");
 document.bookform.subcategory.options[6]=new Option("6500", "6500");
 break;
-case "CNET" :
+case "237" :
 document.bookform.subcategory.options[0]=new Option("Select Sub-Category","");
 document.bookform.subcategory.options[1]=new Option("1160", "1160");
 document.bookform.subcategory.options[2]=new Option("3150", "3150");
@@ -606,7 +606,7 @@ document.bookform.subcategory.options[7]=new Option("4170", "4170");
 document.bookform.subcategory.options[8]=new Option("4780", "4780");
 document.bookform.subcategory.options[9]=new Option("4920", "4920");
 break;
-case "COMM" :
+case "258" :
 document.bookform.subcategory.options[0]=new Option("Select Sub-Category","");
 document.bookform.subcategory.options[1]=new Option("1010", "1010");
 document.bookform.subcategory.options[2]=new Option("1440", "1440");
@@ -639,7 +639,7 @@ document.bookform.subcategory.options[28]=new Option("5545", "5545");
 document.bookform.subcategory.options[29]=new Option("5820", "5820");
 document.bookform.subcategory.options[30]=new Option("5860", "5860");
 break;
-case "COUN" :
+case "238" :
 document.bookform.subcategory.options[0]=new Option("Select Sub-Category","");
 document.bookform.subcategory.options[1]=new Option("2610", "2610");
 document.bookform.subcategory.options[2]=new Option("2620", "2620");
@@ -672,7 +672,7 @@ document.bookform.subcategory.options[28]=new Option("6220", "6220");
 document.bookform.subcategory.options[29]=new Option("6250", "6250");
 document.bookform.subcategory.options[30]=new Option("6651", "6651");
 break;
-case "CSCE" :
+case "194" :
 document.bookform.subcategory.options[0]=new Option("Select Sub-Category","");
 document.bookform.subcategory.options[1]=new Option("1010", "1010");
 document.bookform.subcategory.options[2]=new Option("1030", "1030");
@@ -752,7 +752,7 @@ document.bookform.subcategory.options[75]=new Option("6933", "6933");
 document.bookform.subcategory.options[76]=new Option("6940", "6940");
 document.bookform.subcategory.options[77]=new Option("6950", "6950");
 break;
-case "DANC" :
+case "200" :
 document.bookform.subcategory.options[0]=new Option("Select Sub-Category","");
 document.bookform.subcategory.options[1]=new Option("1050", "1050");
 document.bookform.subcategory.options[2]=new Option("1100", "1100");
@@ -784,7 +784,7 @@ document.bookform.subcategory.options[27]=new Option("4650", "4650");
 document.bookform.subcategory.options[28]=new Option("4900", "4900");
 document.bookform.subcategory.options[29]=new Option("4910", "4910");
 break;
-case "DFST" :
+case "271" :
 document.bookform.subcategory.options[0]=new Option("Select Sub-Category","");
 document.bookform.subcategory.options[1]=new Option("1013", "1013");
 document.bookform.subcategory.options[2]=new Option("1023", "1023");
@@ -806,13 +806,13 @@ document.bookform.subcategory.options[17]=new Option("4353", "4353");
 document.bookform.subcategory.options[18]=new Option("4433", "4433");
 document.bookform.subcategory.options[19]=new Option("4900", "4900");
 break;
-case "DRTL" :
+case "214" :
 document.bookform.subcategory.options[0]=new Option("Select Sub-Category","");
 document.bookform.subcategory.options[1]=new Option("2090", "2090");
 document.bookform.subcategory.options[2]=new Option("3090", "3090");
 document.bookform.subcategory.options[3]=new Option("4090", "4090");
 break;
-case "DSCI" :
+case "181" :
 document.bookform.subcategory.options[0]=new Option("Select Sub-Category","");
 document.bookform.subcategory.options[1]=new Option("2710", "2710");
 document.bookform.subcategory.options[2]=new Option("3710", "3710");
@@ -830,7 +830,7 @@ document.bookform.subcategory.options[13]=new Option("5330", "5330");
 document.bookform.subcategory.options[14]=new Option("5360", "5360");
 document.bookform.subcategory.options[15]=new Option("5900", "5900");
 break;
-case "EADP" :
+case "281" :
 document.bookform.subcategory.options[0]=new Option("Select Sub-Category","");
 document.bookform.subcategory.options[1]=new Option("3010", "3010");
 document.bookform.subcategory.options[2]=new Option("3035", "3035");
@@ -845,7 +845,7 @@ document.bookform.subcategory.options[10]=new Option("4800", "4800");
 document.bookform.subcategory.options[11]=new Option("4810", "4810");
 document.bookform.subcategory.options[12]=new Option("4951", "4951");
 break;
-case "ECON" :
+case "267" :
 document.bookform.subcategory.options[0]=new Option("Select Sub-Category","");
 document.bookform.subcategory.options[1]=new Option("1100", "1100");
 document.bookform.subcategory.options[2]=new Option("1110", "1110");
@@ -887,7 +887,7 @@ document.bookform.subcategory.options[37]=new Option("5920", "5920");
 document.bookform.subcategory.options[38]=new Option("5930", "5930");
 document.bookform.subcategory.options[39]=new Option("5950", "5950");
 break;
-case "EDAD" :
+case "226" :
 document.bookform.subcategory.options[0]=new Option("Select Sub-Category","");
 document.bookform.subcategory.options[1]=new Option("5330", "5330");
 document.bookform.subcategory.options[2]=new Option("5390", "5390");
@@ -913,7 +913,7 @@ document.bookform.subcategory.options[21]=new Option("6590", "6590");
 document.bookform.subcategory.options[22]=new Option("6900", "6900");
 document.bookform.subcategory.options[23]=new Option("6950", "6950");
 break;
-case "EDBE" :
+case "225" :
 document.bookform.subcategory.options[0]=new Option("Select Sub-Category","");
 document.bookform.subcategory.options[1]=new Option("3470", "3470");
 document.bookform.subcategory.options[2]=new Option("3480", "3480");
@@ -924,7 +924,7 @@ document.bookform.subcategory.options[6]=new Option("5560", "5560");
 document.bookform.subcategory.options[7]=new Option("5580", "5580");
 document.bookform.subcategory.options[8]=new Option("5582", "5582");
 break;
-case "EDCI" :
+case "229" :
 document.bookform.subcategory.options[0]=new Option("Select Sub-Category","");
 document.bookform.subcategory.options[1]=new Option("5010", "5010");
 document.bookform.subcategory.options[2]=new Option("5020", "5020");
@@ -941,7 +941,7 @@ document.bookform.subcategory.options[12]=new Option("6285", "6285");
 document.bookform.subcategory.options[13]=new Option("6340", "6340");
 document.bookform.subcategory.options[14]=new Option("6800", "6800");
 break;
-case "EDEC" :
+case "230" :
 document.bookform.subcategory.options[0]=new Option("Select Sub-Category","");
 document.bookform.subcategory.options[1]=new Option("3613", "3613");
 document.bookform.subcategory.options[2]=new Option("4243", "4243");
@@ -955,7 +955,7 @@ document.bookform.subcategory.options[9]=new Option("6900", "6900");
 document.bookform.subcategory.options[10]=new Option("6910", "6910");
 document.bookform.subcategory.options[11]=new Option("6950", "6950");
 break;
-case "EDEE" :
+case "231" :
 document.bookform.subcategory.options[0]=new Option("Select Sub-Category","");
 document.bookform.subcategory.options[1]=new Option("2000", "2000");
 document.bookform.subcategory.options[2]=new Option("3320", "3320");
@@ -972,7 +972,7 @@ document.bookform.subcategory.options[12]=new Option("5104", "5104");
 document.bookform.subcategory.options[13]=new Option("5105", "5105");
 document.bookform.subcategory.options[14]=new Option("5115", "5115");
 break;
-case "EDHE" :
+case "256" :
 document.bookform.subcategory.options[0]=new Option("Select Sub-Category","");
 document.bookform.subcategory.options[1]=new Option("5110", "5110");
 document.bookform.subcategory.options[2]=new Option("5210", "5210");
@@ -988,14 +988,14 @@ document.bookform.subcategory.options[11]=new Option("6710", "6710");
 document.bookform.subcategory.options[12]=new Option("6760", "6760");
 document.bookform.subcategory.options[13]=new Option("6790", "6790");
 break;
-case "EDLL" :
+case "269" :
 document.bookform.subcategory.options[0]=new Option("Select Sub-Category","");
 document.bookform.subcategory.options[1]=new Option("6040", "6040");
 document.bookform.subcategory.options[2]=new Option("6900", "6900");
 document.bookform.subcategory.options[3]=new Option("6910", "6910");
 document.bookform.subcategory.options[4]=new Option("6950", "6950");
 break;
-case "EDME" :
+case "262" :
 document.bookform.subcategory.options[0]=new Option("Select Sub-Category","");
 document.bookform.subcategory.options[1]=new Option("3380", "3380");
 document.bookform.subcategory.options[2]=new Option("4103", "4103");
@@ -1004,7 +1004,7 @@ document.bookform.subcategory.options[4]=new Option("4330", "4330");
 document.bookform.subcategory.options[5]=new Option("4340", "4340");
 document.bookform.subcategory.options[6]=new Option("4351", "4351");
 break;
-case "EDRE" :
+case "223" :
 document.bookform.subcategory.options[0]=new Option("Select Sub-Category","");
 document.bookform.subcategory.options[1]=new Option("4450", "4450");
 document.bookform.subcategory.options[2]=new Option("4820", "4820");
@@ -1018,7 +1018,7 @@ document.bookform.subcategory.options[9]=new Option("5070", "5070");
 document.bookform.subcategory.options[10]=new Option("5370", "5370");
 document.bookform.subcategory.options[11]=new Option("5900", "5900");
 break;
-case "EDSE" :
+case "224" :
 document.bookform.subcategory.options[0]=new Option("Select Sub-Category","");
 document.bookform.subcategory.options[1]=new Option("3500", "3500");
 document.bookform.subcategory.options[2]=new Option("3800", "3800");
@@ -1043,7 +1043,7 @@ document.bookform.subcategory.options[20]=new Option("5108", "5108");
 document.bookform.subcategory.options[21]=new Option("5118", "5118");
 document.bookform.subcategory.options[22]=new Option("5800", "5800");
 break;
-case "EDSP" :
+case "270" :
 document.bookform.subcategory.options[0]=new Option("Select Sub-Category","");
 document.bookform.subcategory.options[1]=new Option("3210", "3210");
 document.bookform.subcategory.options[2]=new Option("3240", "3240");
@@ -1069,12 +1069,12 @@ document.bookform.subcategory.options[21]=new Option("6275", "6275");
 document.bookform.subcategory.options[22]=new Option("6280", "6280");
 document.bookform.subcategory.options[23]=new Option("6530", "6530");
 break;
-case "EDUC" :
+case "376" :
 document.bookform.subcategory.options[0]=new Option("Select Sub-Category","");
 document.bookform.subcategory.options[1]=new Option("6040", "6040");
 document.bookform.subcategory.options[2]=new Option("6120", "6120");
 break;
-case "EENG" :
+case "182" :
 document.bookform.subcategory.options[0]=new Option("Select Sub-Category","");
 document.bookform.subcategory.options[1]=new Option("2610", "2610");
 document.bookform.subcategory.options[2]=new Option("2620", "2620");
@@ -1095,7 +1095,7 @@ document.bookform.subcategory.options[16]=new Option("5610", "5610");
 document.bookform.subcategory.options[17]=new Option("5890", "5890");
 document.bookform.subcategory.options[18]=new Option("5950", "5950");
 break;
-case "ELET" :
+case "245" :
 document.bookform.subcategory.options[0]=new Option("Select Sub-Category","");
 document.bookform.subcategory.options[1]=new Option("1720", "1720");
 document.bookform.subcategory.options[2]=new Option("3220", "3220");
@@ -1106,7 +1106,7 @@ document.bookform.subcategory.options[6]=new Option("4720", "4720");
 document.bookform.subcategory.options[7]=new Option("4780", "4780");
 document.bookform.subcategory.options[8]=new Option("4920", "4920");
 break;
-case "ENGL" :
+case "218" :
 document.bookform.subcategory.options[0]=new Option("Select Sub-Category","");
 document.bookform.subcategory.options[1]=new Option("1310", "1310");
 document.bookform.subcategory.options[2]=new Option("1315", "1315");
@@ -1160,7 +1160,7 @@ document.bookform.subcategory.options[49]=new Option("5900", "5900");
 document.bookform.subcategory.options[50]=new Option("6200", "6200");
 document.bookform.subcategory.options[51]=new Option("6941", "6941");
 break;
-case "ENGR" :
+case "239" :
 document.bookform.subcategory.options[0]=new Option("Select Sub-Category","");
 document.bookform.subcategory.options[1]=new Option("1304", "1304");
 document.bookform.subcategory.options[2]=new Option("2301", "2301");
@@ -1173,7 +1173,7 @@ document.bookform.subcategory.options[8]=new Option("2750", "2750");
 document.bookform.subcategory.options[9]=new Option("3450", "3450");
 document.bookform.subcategory.options[10]=new Option("3451", "3451");
 break;
-case "EPSY" :
+case "233" :
 document.bookform.subcategory.options[0]=new Option("Select Sub-Category","");
 document.bookform.subcategory.options[1]=new Option("3013", "3013");
 document.bookform.subcategory.options[2]=new Option("5000", "5000");
@@ -1202,7 +1202,7 @@ document.bookform.subcategory.options[24]=new Option("6333", "6333");
 document.bookform.subcategory.options[25]=new Option("6640", "6640");
 document.bookform.subcategory.options[26]=new Option("6950", "6950");
 break;
-case "FINA" :
+case "251" :
 document.bookform.subcategory.options[0]=new Option("Select Sub-Category","");
 document.bookform.subcategory.options[1]=new Option("2770", "2770");
 document.bookform.subcategory.options[2]=new Option("3770", "3770");
@@ -1223,7 +1223,7 @@ document.bookform.subcategory.options[16]=new Option("5500", "5500");
 document.bookform.subcategory.options[17]=new Option("5510", "5510");
 document.bookform.subcategory.options[18]=new Option("6100", "6100");
 break;
-case "FREN" :
+case "279" :
 document.bookform.subcategory.options[0]=new Option("Select Sub-Category","");
 document.bookform.subcategory.options[1]=new Option("1010", "1010");
 document.bookform.subcategory.options[2]=new Option("1020", "1020");
@@ -1241,7 +1241,7 @@ document.bookform.subcategory.options[13]=new Option("5200", "5200");
 document.bookform.subcategory.options[14]=new Option("5520", "5520");
 document.bookform.subcategory.options[15]=new Option("5740", "5740");
 break;
-case "GEOG" :
+case "178" :
 document.bookform.subcategory.options[0]=new Option("Select Sub-Category","");
 document.bookform.subcategory.options[1]=new Option("1200", "1200");
 document.bookform.subcategory.options[2]=new Option("1710", "1710");
@@ -1276,13 +1276,13 @@ document.bookform.subcategory.options[30]=new Option("5570", "5570");
 document.bookform.subcategory.options[31]=new Option("5800", "5800");
 document.bookform.subcategory.options[32]=new Option("5960", "5960");
 break;
-case "GEOL" :
+case "179" :
 document.bookform.subcategory.options[0]=new Option("Select Sub-Category","");
 document.bookform.subcategory.options[1]=new Option("1610", "1610");
 document.bookform.subcategory.options[2]=new Option("3000", "3000");
 document.bookform.subcategory.options[3]=new Option("4710", "4710");
 break;
-case "GERM" :
+case "277" :
 document.bookform.subcategory.options[0]=new Option("Select Sub-Category","");
 document.bookform.subcategory.options[1]=new Option("1010", "1010");
 document.bookform.subcategory.options[2]=new Option("1020", "1020");
@@ -1296,13 +1296,13 @@ document.bookform.subcategory.options[9]=new Option("4310", "4310");
 document.bookform.subcategory.options[10]=new Option("4920", "4920");
 document.bookform.subcategory.options[11]=new Option("5900", "5900");
 break;
-case "HFMD" :
+case "215" :
 document.bookform.subcategory.options[0]=new Option("Select Sub-Category","");
 document.bookform.subcategory.options[1]=new Option("2400", "2400");
 document.bookform.subcategory.options[2]=new Option("2655", "2655");
 document.bookform.subcategory.options[3]=new Option("3570", "3570");
 break;
-case "HIST" :
+case "193" :
 document.bookform.subcategory.options[0]=new Option("Select Sub-Category","");
 document.bookform.subcategory.options[1]=new Option("1050", "1050");
 document.bookform.subcategory.options[2]=new Option("1060", "1060");
@@ -1354,7 +1354,7 @@ document.bookform.subcategory.options[47]=new Option("5940", "5940");
 document.bookform.subcategory.options[48]=new Option("6000", "6000");
 document.bookform.subcategory.options[49]=new Option("6940", "6940");
 break;
-case "HLTH" :
+case "241" :
 document.bookform.subcategory.options[0]=new Option("Select Sub-Category","");
 document.bookform.subcategory.options[1]=new Option("1100", "1100");
 document.bookform.subcategory.options[2]=new Option("1900", "1900");
@@ -1370,7 +1370,7 @@ document.bookform.subcategory.options[11]=new Option("4430", "4430");
 document.bookform.subcategory.options[12]=new Option("4600", "4600");
 document.bookform.subcategory.options[13]=new Option("4850", "4850");
 break;
-case "HMGT" :
+case "208" :
 document.bookform.subcategory.options[0]=new Option("Select Sub-Category","");
 document.bookform.subcategory.options[1]=new Option("1420", "1420");
 document.bookform.subcategory.options[2]=new Option("1450", "1450");
@@ -1401,11 +1401,11 @@ document.bookform.subcategory.options[26]=new Option("5200", "5200");
 document.bookform.subcategory.options[27]=new Option("5630", "5630");
 document.bookform.subcategory.options[28]=new Option("5820", "5820");
 break;
-case "HNRS" :
+case "263" :
 document.bookform.subcategory.options[0]=new Option("Select Sub-Category","");
 document.bookform.subcategory.options[1]=new Option("1100", "1100");
 break;
-case "INFO" :
+case "384" :
 document.bookform.subcategory.options[0]=new Option("Select Sub-Category","");
 document.bookform.subcategory.options[1]=new Option("4300", "4300");
 document.bookform.subcategory.options[2]=new Option("4400", "4400");
@@ -1443,7 +1443,7 @@ document.bookform.subcategory.options[33]=new Option("6220", "6220");
 document.bookform.subcategory.options[34]=new Option("6660", "6660");
 document.bookform.subcategory.options[35]=new Option("6910", "6910");
 break;
-case "INST" :
+case "261" :
 document.bookform.subcategory.options[0]=new Option("Select Sub-Category","");
 document.bookform.subcategory.options[1]=new Option("2100", "2100");
 document.bookform.subcategory.options[2]=new Option("4800", "4800");
@@ -1454,13 +1454,13 @@ document.bookform.subcategory.options[6]=new Option("4900", "4900");
 document.bookform.subcategory.options[7]=new Option("5700", "5700");
 document.bookform.subcategory.options[8]=new Option("5900", "5900");
 break;
-case "ITAL" :
+case "266" :
 document.bookform.subcategory.options[0]=new Option("Select Sub-Category","");
 document.bookform.subcategory.options[1]=new Option("1010", "1010");
 document.bookform.subcategory.options[2]=new Option("2040", "2040");
 document.bookform.subcategory.options[3]=new Option("3080", "3080");
 break;
-case "JAPN" :
+case "273" :
 document.bookform.subcategory.options[0]=new Option("Select Sub-Category","");
 document.bookform.subcategory.options[1]=new Option("1010", "1010");
 document.bookform.subcategory.options[2]=new Option("1020", "1020");
@@ -1469,7 +1469,7 @@ document.bookform.subcategory.options[4]=new Option("2050", "2050");
 document.bookform.subcategory.options[5]=new Option("3020", "3020");
 document.bookform.subcategory.options[6]=new Option("3040", "3040");
 break;
-case "JOUR" :
+case "191" :
 document.bookform.subcategory.options[0]=new Option("Select Sub-Category","");
 document.bookform.subcategory.options[1]=new Option("1210", "1210");
 document.bookform.subcategory.options[2]=new Option("2000", "2000");
@@ -1524,7 +1524,7 @@ document.bookform.subcategory.options[50]=new Option("5350", "5350");
 document.bookform.subcategory.options[51]=new Option("5550", "5550");
 document.bookform.subcategory.options[52]=new Option("5700", "5700");
 break;
-case "KINE" :
+case "211" :
 document.bookform.subcategory.options[0]=new Option("Select Sub-Category","");
 document.bookform.subcategory.options[1]=new Option("2030", "2030");
 document.bookform.subcategory.options[2]=new Option("2050", "2050");
@@ -1569,7 +1569,7 @@ document.bookform.subcategory.options[40]=new Option("5910", "5910");
 document.bookform.subcategory.options[41]=new Option("6121", "6121");
 document.bookform.subcategory.options[42]=new Option("6550", "6550");
 break;
-case "LGAV" :
+case "175" :
 document.bookform.subcategory.options[0]=new Option("Select Sub-Category","");
 document.bookform.subcategory.options[1]=new Option("3100", "3100");
 document.bookform.subcategory.options[2]=new Option("3110", "3110");
@@ -1579,7 +1579,7 @@ document.bookform.subcategory.options[5]=new Option("3140", "3140");
 document.bookform.subcategory.options[6]=new Option("3150", "3150");
 document.bookform.subcategory.options[7]=new Option("4100", "4100");
 break;
-case "LING" :
+case "272" :
 document.bookform.subcategory.options[0]=new Option("Select Sub-Category","");
 document.bookform.subcategory.options[1]=new Option("3060", "3060");
 document.bookform.subcategory.options[2]=new Option("3070", "3070");
@@ -1591,7 +1591,7 @@ document.bookform.subcategory.options[7]=new Option("5020", "5020");
 document.bookform.subcategory.options[8]=new Option("5300", "5300");
 document.bookform.subcategory.options[9]=new Option("5360", "5360");
 break;
-case "LSCM" :
+case "176" :
 document.bookform.subcategory.options[0]=new Option("Select Sub-Category","");
 document.bookform.subcategory.options[1]=new Option("3960", "3960");
 document.bookform.subcategory.options[2]=new Option("4360", "4360");
@@ -1604,7 +1604,7 @@ document.bookform.subcategory.options[8]=new Option("5300", "5300");
 document.bookform.subcategory.options[9]=new Option("5560", "5560");
 document.bookform.subcategory.options[10]=new Option("6040", "6040");
 break;
-case "LTEC" :
+case "222" :
 document.bookform.subcategory.options[0]=new Option("Select Sub-Category","");
 document.bookform.subcategory.options[1]=new Option("1100", "1100");
 document.bookform.subcategory.options[2]=new Option("2100", "2100");
@@ -1635,7 +1635,7 @@ document.bookform.subcategory.options[26]=new Option("4741", "4741");
 document.bookform.subcategory.options[27]=new Option("4800", "4800");
 document.bookform.subcategory.options[28]=new Option("4900", "4900");
 break;
-case "MATH" :
+case "195" :
 document.bookform.subcategory.options[0]=new Option("Select Sub-Category","");
 document.bookform.subcategory.options[1]=new Option("1100", "1100");
 document.bookform.subcategory.options[2]=new Option("1180", "1180");
@@ -1676,7 +1676,7 @@ document.bookform.subcategory.options[36]=new Option("5610", "5610");
 document.bookform.subcategory.options[37]=new Option("5810", "5810");
 document.bookform.subcategory.options[38]=new Option("6810", "6810");
 break;
-case "MDSE" :
+case "204" :
 document.bookform.subcategory.options[0]=new Option("Select Sub-Category","");
 document.bookform.subcategory.options[1]=new Option("2040", "2040");
 document.bookform.subcategory.options[2]=new Option("2350", "2350");
@@ -1700,7 +1700,7 @@ document.bookform.subcategory.options[19]=new Option("5560", "5560");
 document.bookform.subcategory.options[20]=new Option("5650", "5650");
 document.bookform.subcategory.options[21]=new Option("5850", "5850");
 break;
-case "MEEN" :
+case "212" :
 document.bookform.subcategory.options[0]=new Option("Select Sub-Category","");
 document.bookform.subcategory.options[1]=new Option("1000", "1000");
 document.bookform.subcategory.options[2]=new Option("2210", "2210");
@@ -1744,7 +1744,7 @@ document.bookform.subcategory.options[39]=new Option("5920", "5920");
 document.bookform.subcategory.options[40]=new Option("5940", "5940");
 document.bookform.subcategory.options[41]=new Option("5950", "5950");
 break;
-case "MEET" :
+case "248" :
 document.bookform.subcategory.options[0]=new Option("Select Sub-Category","");
 document.bookform.subcategory.options[1]=new Option("2900", "2900");
 document.bookform.subcategory.options[2]=new Option("3940", "3940");
@@ -1757,7 +1757,7 @@ document.bookform.subcategory.options[8]=new Option("4900", "4900");
 document.bookform.subcategory.options[9]=new Option("4910", "4910");
 document.bookform.subcategory.options[10]=new Option("4920", "4920");
 break;
-case "MFET" :
+case "243" :
 document.bookform.subcategory.options[0]=new Option("Select Sub-Category","");
 document.bookform.subcategory.options[1]=new Option("2900", "2900");
 document.bookform.subcategory.options[2]=new Option("3110", "3110");
@@ -1766,7 +1766,7 @@ document.bookform.subcategory.options[4]=new Option("4220", "4220");
 document.bookform.subcategory.options[5]=new Option("4900", "4900");
 document.bookform.subcategory.options[6]=new Option("4910", "4910");
 break;
-case "MGMT" :
+case "180" :
 document.bookform.subcategory.options[0]=new Option("Select Sub-Category","");
 document.bookform.subcategory.options[1]=new Option("3330", "3330");
 document.bookform.subcategory.options[2]=new Option("3720", "3720");
@@ -1806,7 +1806,7 @@ document.bookform.subcategory.options[35]=new Option("6910", "6910");
 document.bookform.subcategory.options[36]=new Option("6940", "6940");
 document.bookform.subcategory.options[37]=new Option("6950", "6950");
 break;
-case "MKTG" :
+case "177" :
 document.bookform.subcategory.options[0]=new Option("Select Sub-Category","");
 document.bookform.subcategory.options[1]=new Option("2650", "2650");
 document.bookform.subcategory.options[2]=new Option("3010", "3010");
@@ -1836,11 +1836,11 @@ document.bookform.subcategory.options[25]=new Option("5250", "5250");
 document.bookform.subcategory.options[26]=new Option("5850", "5850");
 document.bookform.subcategory.options[27]=new Option("6020", "6020");
 break;
-case "MSCI" :
+case "190" :
 document.bookform.subcategory.options[0]=new Option("Select Sub-Category","");
 document.bookform.subcategory.options[1]=new Option("6750", "6750");
 break;
-case "MSET" :
+case "391" :
 document.bookform.subcategory.options[0]=new Option("Select Sub-Category","");
 document.bookform.subcategory.options[1]=new Option("5030", "5030");
 document.bookform.subcategory.options[2]=new Option("5200", "5200");
@@ -1849,15 +1849,15 @@ document.bookform.subcategory.options[4]=new Option("5300", "5300");
 document.bookform.subcategory.options[5]=new Option("5310", "5310");
 document.bookform.subcategory.options[6]=new Option("5800", "5800");
 break;
-case "MTSE" :
+case "232" :
 document.bookform.subcategory.options[0]=new Option("Select Sub-Category","");
 document.bookform.subcategory.options[1]=new Option("3010", "3010");
 document.bookform.subcategory.options[2]=new Option("3030", "3030");
 document.bookform.subcategory.options[3]=new Option("4010", "4010");
 document.bookform.subcategory.options[4]=new Option("4030", "4030");
 document.bookform.subcategory.options[5]=new Option("5010", "5010");
-break;ß
-case "MUAC" :
+break;
+case "392" :
 document.bookform.subcategory.options[0]=new Option("Select Sub-Category","");
 document.bookform.subcategory.options[1]=new Option("1501", "1501");
 document.bookform.subcategory.options[2]=new Option("1503", "1503");
@@ -1908,7 +1908,7 @@ document.bookform.subcategory.options[46]=new Option("3536", "3536");
 document.bookform.subcategory.options[47]=new Option("3537", "3537");
 document.bookform.subcategory.options[48]=new Option("3538", "3538");
 break;
-case "MUAG" :
+case "186" :
 document.bookform.subcategory.options[0]=new Option("Select Sub-Category","");
 document.bookform.subcategory.options[1]=new Option("1001", "1001");
 document.bookform.subcategory.options[2]=new Option("1002", "1002");
@@ -1953,7 +1953,7 @@ document.bookform.subcategory.options[40]=new Option("6360", "6360");
 document.bookform.subcategory.options[41]=new Option("6370", "6370");
 document.bookform.subcategory.options[42]=new Option("6850", "6850");
 break;
-case "MUAM" :
+case "385" :
 document.bookform.subcategory.options[0]=new Option("Select Sub-Category","");
 document.bookform.subcategory.options[1]=new Option("1501", "1501");
 document.bookform.subcategory.options[2]=new Option("1502", "1502");
@@ -2043,7 +2043,7 @@ document.bookform.subcategory.options[85]=new Option("6528", "6528");
 document.bookform.subcategory.options[86]=new Option("6533", "6533");
 document.bookform.subcategory.options[87]=new Option("6534", "6534");
 break;
-case "MUAS" :
+case "196" :
 document.bookform.subcategory.options[0]=new Option("Select Sub-Category","");
 document.bookform.subcategory.options[1]=new Option("1501", "1501");
 document.bookform.subcategory.options[2]=new Option("1502", "1502");
@@ -2138,7 +2138,7 @@ document.bookform.subcategory.options[90]=new Option("6524", "6524");
 document.bookform.subcategory.options[91]=new Option("6527", "6527");
 document.bookform.subcategory.options[92]=new Option("6528", "6528");
 break;
-case "MUCP" :
+case "203" :
 document.bookform.subcategory.options[0]=new Option("Select Sub-Category","");
 document.bookform.subcategory.options[1]=new Option("1180", "1180");
 document.bookform.subcategory.options[2]=new Option("1190", "1190");
@@ -2168,7 +2168,7 @@ document.bookform.subcategory.options[25]=new Option("6200", "6200");
 document.bookform.subcategory.options[26]=new Option("6900", "6900");
 document.bookform.subcategory.options[27]=new Option("6910", "6910");
 break;
-case "MUED" :
+case "264" :
 document.bookform.subcategory.options[0]=new Option("Select Sub-Category","");
 document.bookform.subcategory.options[1]=new Option("1130", "1130");
 document.bookform.subcategory.options[2]=new Option("2310", "2310");
@@ -2184,7 +2184,7 @@ document.bookform.subcategory.options[11]=new Option("5500", "5500");
 document.bookform.subcategory.options[12]=new Option("5510", "5510");
 document.bookform.subcategory.options[13]=new Option("6440", "6440");
 break;
-case "MUET" :
+case "219" :
 document.bookform.subcategory.options[0]=new Option("Select Sub-Category","");
 document.bookform.subcategory.options[1]=new Option("3020", "3020");
 document.bookform.subcategory.options[2]=new Option("3030", "3030");
@@ -2193,11 +2193,11 @@ document.bookform.subcategory.options[4]=new Option("4500", "4500");
 document.bookform.subcategory.options[5]=new Option("5020", "5020");
 document.bookform.subcategory.options[6]=new Option("5617", "5617");
 break;
-case "MUGC" :
+case "378" :
 document.bookform.subcategory.options[0]=new Option("Select Sub-Category","");
 document.bookform.subcategory.options[1]=new Option("4890", "4890");
 break;
-case "MUJS" :
+case "257" :
 document.bookform.subcategory.options[0]=new Option("Select Sub-Category","");
 document.bookform.subcategory.options[1]=new Option("1470", "1470");
 document.bookform.subcategory.options[2]=new Option("3610", "3610");
@@ -2214,7 +2214,7 @@ document.bookform.subcategory.options[12]=new Option("5760", "5760");
 document.bookform.subcategory.options[13]=new Option("6532", "6532");
 document.bookform.subcategory.options[14]=new Option("6539", "6539");
 break;
-case "MUMH" :
+case "202" :
 document.bookform.subcategory.options[0]=new Option("Select Sub-Category","");
 document.bookform.subcategory.options[1]=new Option("1600", "1600");
 document.bookform.subcategory.options[2]=new Option("2040", "2040");
@@ -2237,7 +2237,7 @@ document.bookform.subcategory.options[18]=new Option("5711", "5711");
 document.bookform.subcategory.options[19]=new Option("6160", "6160");
 document.bookform.subcategory.options[20]=new Option("6750", "6750");
 break;
-case "MUTH" :
+case "205" :
 document.bookform.subcategory.options[0]=new Option("Select Sub-Category","");
 document.bookform.subcategory.options[1]=new Option("1300", "1300");
 document.bookform.subcategory.options[2]=new Option("1400", "1400");
@@ -2270,12 +2270,12 @@ document.bookform.subcategory.options[28]=new Option("5680", "5680");
 document.bookform.subcategory.options[29]=new Option("6660", "6660");
 document.bookform.subcategory.options[30]=new Option("6680", "6680");
 break;
-case "NCTM" :
+case "387" :
 document.bookform.subcategory.options[0]=new Option("Select Sub-Category","");
 document.bookform.subcategory.options[1]=new Option("331", "331");
 document.bookform.subcategory.options[2]=new Option("332", "332");
 break;
-case "PACS" :
+case "274" :
 document.bookform.subcategory.options[0]=new Option("Select Sub-Category","");
 document.bookform.subcategory.options[1]=new Option("3020", "3020");
 document.bookform.subcategory.options[2]=new Option("4000", "4000");
@@ -2290,7 +2290,7 @@ document.bookform.subcategory.options[10]=new Option("4260", "4260");
 document.bookform.subcategory.options[11]=new Option("4610", "4610");
 document.bookform.subcategory.options[12]=new Option("4900", "4900");
 break;
-case "PADM" :
+case "280" :
 document.bookform.subcategory.options[0]=new Option("Select Sub-Category","");
 document.bookform.subcategory.options[1]=new Option("2100", "2100");
 document.bookform.subcategory.options[2]=new Option("3000", "3000");
@@ -2316,7 +2316,7 @@ document.bookform.subcategory.options[21]=new Option("6900", "6900");
 document.bookform.subcategory.options[22]=new Option("6940", "6940");
 document.bookform.subcategory.options[23]=new Option("6950", "6950");
 break;
-case "PHED" :
+case "252" :
 document.bookform.subcategory.options[0]=new Option("Select Sub-Category","");
 document.bookform.subcategory.options[1]=new Option("1000", "1000");
 document.bookform.subcategory.options[2]=new Option("1010", "1010");
@@ -2348,7 +2348,7 @@ document.bookform.subcategory.options[27]=new Option("1790", "1790");
 document.bookform.subcategory.options[28]=new Option("1791", "1791");
 document.bookform.subcategory.options[29]=new Option("2900", "2900");
 break;
-case "PHIL" :
+case "247" :
 document.bookform.subcategory.options[0]=new Option("Select Sub-Category","");
 document.bookform.subcategory.options[1]=new Option("1050", "1050");
 document.bookform.subcategory.options[2]=new Option("1400", "1400");
@@ -2376,7 +2376,7 @@ document.bookform.subcategory.options[23]=new Option("5250", "5250");
 document.bookform.subcategory.options[24]=new Option("5300", "5300");
 document.bookform.subcategory.options[25]=new Option("6780", "6780");
 break;
-case "PHYS" :
+case "227" :
 document.bookform.subcategory.options[0]=new Option("Select Sub-Category","");
 document.bookform.subcategory.options[1]=new Option("1052", "1052");
 document.bookform.subcategory.options[2]=new Option("1062", "1062");
@@ -2416,7 +2416,7 @@ document.bookform.subcategory.options[35]=new Option("6110", "6110");
 document.bookform.subcategory.options[36]=new Option("6155", "6155");
 document.bookform.subcategory.options[37]=new Option("6800", "6800");
 break;
-case "PSCI" :
+case "254" :
 document.bookform.subcategory.options[0]=new Option("Select Sub-Category","");
 document.bookform.subcategory.options[1]=new Option("1010", "1010");
 document.bookform.subcategory.options[2]=new Option("1040", "1040");
@@ -2451,7 +2451,7 @@ document.bookform.subcategory.options[30]=new Option("5831", "5831");
 document.bookform.subcategory.options[31]=new Option("6000", "6000");
 document.bookform.subcategory.options[32]=new Option("6320", "6320");
 break;
-case "PSYC" :
+case "210" :
 document.bookform.subcategory.options[0]=new Option("Select Sub-Category","");
 document.bookform.subcategory.options[1]=new Option("1500", "1500");
 document.bookform.subcategory.options[2]=new Option("1630", "1630");
@@ -2498,7 +2498,7 @@ document.bookform.subcategory.options[42]=new Option("6300", "6300");
 document.bookform.subcategory.options[43]=new Option("6420", "6420");
 document.bookform.subcategory.options[44]=new Option("6640", "6640");
 break;
-case "REAL" :
+case "282" :
 document.bookform.subcategory.options[0]=new Option("Select Sub-Category","");
 document.bookform.subcategory.options[1]=new Option("2100", "2100");
 document.bookform.subcategory.options[2]=new Option("3100", "3100");
@@ -2507,7 +2507,7 @@ document.bookform.subcategory.options[4]=new Option("4300", "4300");
 document.bookform.subcategory.options[5]=new Option("4400", "4400");
 document.bookform.subcategory.options[6]=new Option("4800", "4800");
 break;
-case "RECR" :
+case "209" :
 document.bookform.subcategory.options[0]=new Option("Select Sub-Category","");
 document.bookform.subcategory.options[1]=new Option("1950", "1950");
 document.bookform.subcategory.options[2]=new Option("2150", "2150");
@@ -2532,7 +2532,7 @@ document.bookform.subcategory.options[20]=new Option("5900", "5900");
 document.bookform.subcategory.options[21]=new Option("5910", "5910");
 document.bookform.subcategory.options[22]=new Option("5950", "5950");
 break;
-case "RHAB" :
+case "235" :
 document.bookform.subcategory.options[0]=new Option("Select Sub-Category","");
 document.bookform.subcategory.options[1]=new Option("2575", "2575");
 document.bookform.subcategory.options[2]=new Option("3000", "3000");
@@ -2560,7 +2560,7 @@ document.bookform.subcategory.options[23]=new Option("5811", "5811");
 document.bookform.subcategory.options[24]=new Option("5812", "5812");
 document.bookform.subcategory.options[25]=new Option("5950", "5950");
 break;
-case "RMIN" :
+case "255" :
 document.bookform.subcategory.options[0]=new Option("Select Sub-Category","");
 document.bookform.subcategory.options[1]=new Option("2500", "2500");
 document.bookform.subcategory.options[2]=new Option("4200", "4200");
@@ -2570,7 +2570,7 @@ document.bookform.subcategory.options[5]=new Option("4600", "4600");
 document.bookform.subcategory.options[6]=new Option("4800", "4800");
 document.bookform.subcategory.options[7]=new Option("5780", "5780");
 break;
-case "RTVF" :
+case "216" :
 document.bookform.subcategory.options[0]=new Option("Select Sub-Category","");
 document.bookform.subcategory.options[1]=new Option("1310", "1310");
 document.bookform.subcategory.options[2]=new Option("1320", "1320");
@@ -2629,18 +2629,18 @@ document.bookform.subcategory.options[54]=new Option("5900", "5900");
 document.bookform.subcategory.options[55]=new Option("5910", "5910");
 document.bookform.subcategory.options[56]=new Option("5950", "5950");
 break;
-case "RUSS" :
+case "265" :
 document.bookform.subcategory.options[0]=new Option("Select Sub-Category","");
 document.bookform.subcategory.options[1]=new Option("1010", "1010");
 document.bookform.subcategory.options[2]=new Option("2040", "2040");
 document.bookform.subcategory.options[3]=new Option("3070", "3070");
 break;
-case "SLIS" :
+case "207" :
 document.bookform.subcategory.options[0]=new Option("Select Sub-Category","");
 document.bookform.subcategory.options[1]=new Option("5815", "5815");
 document.bookform.subcategory.options[2]=new Option("6945", "6945");
 break;
-case "SOCI" :
+case "187" :
 document.bookform.subcategory.options[0]=new Option("Select Sub-Category","");
 document.bookform.subcategory.options[1]=new Option("1510", "1510");
 document.bookform.subcategory.options[2]=new Option("1520", "1520");
@@ -2673,7 +2673,7 @@ document.bookform.subcategory.options[28]=new Option("5260", "5260");
 document.bookform.subcategory.options[29]=new Option("6200", "6200");
 document.bookform.subcategory.options[30]=new Option("6500", "6500");
 break;
-case "SOWK" :
+case "278" :
 document.bookform.subcategory.options[0]=new Option("Select Sub-Category","");
 document.bookform.subcategory.options[1]=new Option("1450", "1450");
 document.bookform.subcategory.options[2]=new Option("2430", "2430");
@@ -2692,7 +2692,7 @@ document.bookform.subcategory.options[14]=new Option("4875", "4875");
 document.bookform.subcategory.options[15]=new Option("4900", "4900");
 document.bookform.subcategory.options[16]=new Option("4910", "4910");
 break;
-case "SPAN" :
+case "276" :
 document.bookform.subcategory.options[0]=new Option("Select Sub-Category","");
 document.bookform.subcategory.options[1]=new Option("1010", "1010");
 document.bookform.subcategory.options[2]=new Option("1020", "1020");
@@ -2722,7 +2722,7 @@ document.bookform.subcategory.options[25]=new Option("5203", "5203");
 document.bookform.subcategory.options[26]=new Option("5230", "5230");
 document.bookform.subcategory.options[27]=new Option("5480", "5480");
 break;
-case "SPHS" :
+case "217" :
 document.bookform.subcategory.options[0]=new Option("Select Sub-Category","");
 document.bookform.subcategory.options[1]=new Option("1040", "1040");
 document.bookform.subcategory.options[2]=new Option("2015", "2015");
@@ -2758,7 +2758,7 @@ document.bookform.subcategory.options[31]=new Option("6730", "6730");
 document.bookform.subcategory.options[32]=new Option("6770", "6770");
 document.bookform.subcategory.options[33]=new Option("6800", "6800");
 break;
-case "TECM" :
+case "260" :
 document.bookform.subcategory.options[0]=new Option("Select Sub-Category","");
 document.bookform.subcategory.options[1]=new Option("1200", "1200");
 document.bookform.subcategory.options[2]=new Option("1700", "1700");
@@ -2774,7 +2774,7 @@ document.bookform.subcategory.options[11]=new Option("5185", "5185");
 document.bookform.subcategory.options[12]=new Option("5191", "5191");
 document.bookform.subcategory.options[13]=new Option("5550", "5550");
 break;
-case "THEA" :
+case "201" :
 document.bookform.subcategory.options[0]=new Option("Select Sub-Category","");
 document.bookform.subcategory.options[1]=new Option("1030", "1030");
 document.bookform.subcategory.options[2]=new Option("1043", "1043");
@@ -2811,7 +2811,7 @@ document.bookform.subcategory.options[32]=new Option("4900", "4900");
 document.bookform.subcategory.options[33]=new Option("4910", "4910");
 document.bookform.subcategory.options[34]=new Option("4920", "4920");
 break;
-case "UCRS" :
+case "188" :
 document.bookform.subcategory.options[0]=new Option("Select Sub-Category","");
 document.bookform.subcategory.options[1]=new Option("1100", "1100");
 document.bookform.subcategory.options[2]=new Option("1850", "1850");
@@ -2822,7 +2822,7 @@ document.bookform.subcategory.options[6]=new Option("4700", "4700");
 document.bookform.subcategory.options[7]=new Option("4800", "4800");
 document.bookform.subcategory.options[8]=new Option("5800", "5800");
 break;
-case "WMST" :
+case "253" :
 document.bookform.subcategory.options[0]=new Option("Select Sub-Category","");
 document.bookform.subcategory.options[1]=new Option("2100", "2100");
 document.bookform.subcategory.options[2]=new Option("2420", "2420");
