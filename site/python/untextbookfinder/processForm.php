@@ -18,7 +18,8 @@
         }
 
         //goes to search page
+        
         echo '<script type="text/javascript">';
-        echo 'window.location.href = "http://localhost/csce4444/site/search/search.php"';
+        echo 'window.location.href = "http://localhost/csce4444/site/results/results.php"';
         echo '</script>';
 ?>
