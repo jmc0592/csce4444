@@ -115,27 +115,30 @@ class UntbookstoreSpider(scrapy.Spider):
 
         #fill out form with all combinations of choices
         UntbookstoreSpider.globeI = i = 1
-        for i, dep in enumerate(departments):
+        for dep in departments:
             depName = dep.xpath('.//text()').extract()
             print "----[Debug]: depName = " + depName[0] + "----"
             UntbookstoreSpider.BookClass['department'] = depName[0]
             if(i != 1):
                 self.driver.find_element_by_xpath("//ul[@class='columnLabelLayout']/li[2]/input").clear()
+            #hover and click input element
             self.element_to_hover_over = self.driver.find_element_by_xpath("//ul[@class='columnLabelLayout']/li[2]/input")
             self.hoverDept = ActionChains(self.driver).move_to_element(self.element_to_hover_over)
             self.hoverDept.perform()
             self.element_to_hover_over.click()
 
+            #click department
             wait = WebDriverWait(self.driver, 10)
             self.deptToClick = wait.until(EC.presence_of_element_located((By.XPATH,"//ul[@class='columnLabelLayout']/li[2]/ul/li["+str(i)+"]")))
             self.deptToClick.click()
 
             time.sleep(2)
 
+            #obtain course list
             selector = self.convertToScrapyObject(self.driver.page_source)
             courses = selector.select('//ul[@class="columnLabelLayout"]/li[3]/ul/li')
-            UntbookstoreSpider.globeJ = j = 1 #switch back after dept is done
-            for j, course in enumerate(courses):
+            UntbookstoreSpider.globeJ = j = 1
+            for course in courses:
                 courseName = course.xpath('.//text()').extract()
                 UntbookstoreSpider.BookClass['course'] = courseName[0]
                 if(j != 1):
@@ -154,7 +157,7 @@ class UntbookstoreSpider(scrapy.Spider):
                 selector = self.convertToScrapyObject(self.driver.page_source)
                 sections = selector.select('//ul[@class="columnLabelLayout"]/li[4]/ul/li')
                 k = 1
-                for k, section in enumerate(sections):
+                for section in sections:
                     sectionName = section.xpath('.//text()').extract()
                     UntbookstoreSpider.BookClass['section'] = sectionName[0]
                     if(k != 1):
