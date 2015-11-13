@@ -1,13 +1,12 @@
 <?php
+# queries our database from Parse.com
 require '../parseConnect.php';
-
 use Parse\ParseObject;
 use Parse\ParseQuery;
 use Parse\ParseException;
 
 function queryDataUnt($department, $course, $section = "001") {
 
-    $department = "ACCT";
     $query = new ParseQuery("Book");
     $query->startsWith("department", $department);
     $query->equalTo("course", $course);
@@ -26,5 +25,4 @@ function queryDataUnt($department, $course, $section = "001") {
         echo "Book not found in database.";
     }
 }
-
 ?>

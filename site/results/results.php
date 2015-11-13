@@ -26,6 +26,8 @@
 					$deptArray = explode("|", $_POST["department"]);
 					$deptNumber = $deptArray[0];
 					$deptName = $deptArray[1];
+					$_SESSION["deptNumber"] = $deptNumber;
+					$_SESSION["courseNumber"] = $_POST["course"]; 
 					queryDataUnt($deptName, $_POST["course"]);
 					if(isset($GLOBALS["name"])){
 						if(isset($GLOBALS["name"]))
@@ -43,6 +45,9 @@
 			<div id="infodivide"></div>
 			<div id="voertmans" class="bookstore">
 				<h1>Voertman's</h1>
+				<span id="loading" hidden>Scraping data...</span>
+				<p>
+				</p>
 			</div>
 			<div id="unt" class="bookstore">
 				<h1>UNT Bookstore</h1>
@@ -64,6 +69,17 @@
 	</div>
 </body>
 </html>
-<?php
-	session_destroy();
-?>
+<script type="text/javascript">
+	$("#loading").show();
+    $.ajax({
+		type: "POST",
+		url: "../python/untextbookfinder/processForm.php",
+		success: function() {
+			alert("Finished obtaining Voertman's data.");
+			var bookNew = <?php echo json_encode($_SESSION["bookNewVoert"]);?> + "<br/>";
+			var bookRental = <?php echo json_encode($_SESSION["bookRentalVoert"]);?>;
+			$("#loading").hide();
+			$("#voertmans p").after(bookNew.trim(), bookRental.trim());
+		}
+    });
+</script>
