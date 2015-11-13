@@ -14,7 +14,7 @@
 	</div>
 	<div id = "left">
 		<p><a href="../index.php">Home</a></p>
-		<p><a href="">About Us</a></p>
+		<p><a href="../aboutus/aboutus.html">About Us</a></p>
 	</div>
 	<div id = "right">
 		<div id="bookinfo">

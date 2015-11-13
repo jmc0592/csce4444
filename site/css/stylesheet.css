@@ -63,6 +63,11 @@ body{
 	height: 850px;
 	background-color: #F4EBC3;
 }
+#right p{
+	text-align:center;
+	font-size:20px;
+	color:darkgreen;
+}
 
 #select{
 	margin:auto;
