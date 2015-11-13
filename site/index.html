@@ -13,9 +13,10 @@
 	</div>
 	<div id = "right">
 		<form id="bookform" name="bookform" action="results/results.php" method="post">
+			<h4 id="description">Compare book prices from Voertman's, the UNT bookstore, Amazon, and Chegg</h4>
 			<div id = "select">
 				<select name="department" class = "selectmenus" form="bookform" onchange="javascript: dropdownlist(this.options[this.selectedIndex].value);">
-					<option value="" disabled="disabled" selected="selected">Select Category</option>
+					<option value="" disabled="disabled" selected="selected">Select Department...</option>
 					<option value="198|ACCT">ACCT - ACCOUNTING</option>
 					<option value="259|ADES">ADES - ART DESIGN</option>
 					<option value="250|AEAH">AEAH - ART EDUCATION ART HISTORY</option>
@@ -134,17 +135,17 @@
 				</select>
 				<td align="left" valign="middle">
 				<script type="text/javascript" language="JavaScript">
- 					document.write('<select name="course"><option value="">Select Sub-Category</option></select>');
+ 					document.write('<select name="course"><option value="">Select Course...</option></select>');
 				</script>
 				<noscript>
 				<select name="course" class="selectmenus" id="subcategory">
-				<option value="">Select Sub-Category</option>
+				<option value="">Select Course...</option>
  				</select>
  				</noscript></td>
  				</tr>
 
 				<select class = "selectmenus" name = "section" form="bookform">
-					<option value="" disabled="disabled" selected="selected">Select</option>
+					<option value="" disabled="disabled" selected="selected">Select Section...</option>
 					<option value="41334">ALL</option>
 				</select>
 			<input id="button" type = "submit">

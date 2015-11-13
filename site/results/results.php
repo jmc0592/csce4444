@@ -69,17 +69,19 @@
 	</div>
 </body>
 </html>
-<script type="text/javascript">
-	$("#loading").show();
-    $.ajax({
-		type: "POST",
-		url: "../python/untextbookfinder/processForm.php",
-		success: function() {
-			alert("Finished obtaining Voertman's data.");
-			var bookNew = <?php echo json_encode($_SESSION["bookNewVoert"]);?> + "<br/>";
-			var bookRental = <?php echo json_encode($_SESSION["bookRentalVoert"]);?>;
-			$("#loading").hide();
-			$("#voertmans p").after(bookNew.trim(), bookRental.trim());
-		}
-    });
-</script>
+<?php if(isset($GLOBALS["name"])) : ?>
+	<script type="text/javascript">
+		$("#loading").show();
+	    $.ajax({
+			type: "POST",
+			url: "../python/untextbookfinder/processForm.php",
+			success: function() {
+				alert("Finished obtaining Voertman's data.");
+				var bookNew = <?php echo json_encode($_SESSION["bookNewVoert"]);?> + "<br/>";
+				var bookRental = <?php echo json_encode($_SESSION["bookRentalVoert"]);?>;
+				$("#loading").hide();
+				$("#voertmans p").after(bookNew.trim(), bookRental.trim());
+			}
+	    });
+	</script>
+<?php endif; ?>

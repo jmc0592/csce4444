@@ -7,7 +7,7 @@ document.bookform.course.options.length = 0;
  {
 
 case "198|ACCT" :
-document.bookform.course.options[0]=new Option("Select Sub-Category","");
+document.bookform.course.options[0]=new Option("Select Course...","");
 document.bookform.course.options[1]=new Option("2010", "2010");
 document.bookform.course.options[2]=new Option("2020", "2020");
 document.bookform.course.options[3]=new Option("3110", "3110");
@@ -46,7 +46,7 @@ document.bookform.course.options[35]=new Option("6940", "6940");
 document.bookform.course.options[36]=new Option("6950", "6950");
 break;
 case "259|ADES" :
-document.bookform.course.options[0]=new Option("Select Sub-Category","");
+document.bookform.course.options[0]=new Option("Select Course...","");
 document.bookform.course.options[1]=new Option("1500", "1500");
 document.bookform.course.options[2]=new Option("1510", "1510");
 document.bookform.course.options[3]=new Option("1550", "1550");
@@ -77,7 +77,7 @@ document.bookform.course.options[27]=new Option("5530", "5530");
 document.bookform.course.options[28]=new Option("5630", "5630");
 break;
 case "250|AEAH" :
-document.bookform.course.options[0]=new Option("Select Sub-Category","");
+document.bookform.course.options[0]=new Option("Select Course...","");
 document.bookform.course.options[1]=new Option("1750", "1750");
 document.bookform.course.options[2]=new Option("3753", "3753");
 document.bookform.course.options[3]=new Option("3770", "3770");
@@ -118,14 +118,14 @@ document.bookform.course.options[37]=new Option("5942", "5942");
 document.bookform.course.options[38]=new Option("5945", "5945");
 break;
 case "377|AECO" :
-document.bookform.course.options[0]=new Option("Select Sub-Category","");
+document.bookform.course.options[0]=new Option("Select Course...","");
 document.bookform.course.options[1]=new Option("5900", "5900");
 document.bookform.course.options[2]=new Option("5910", "5910");
 document.bookform.course.options[3]=new Option("5930", "5930");
 document.bookform.course.options[4]=new Option("5950", "5950");
 break;
 case "189|AGER" :
-document.bookform.course.options[0]=new Option("Select Sub-Category","");
+document.bookform.course.options[0]=new Option("Select Course...","");
 document.bookform.course.options[1]=new Option("3480", "3480");
 document.bookform.course.options[2]=new Option("4060", "4060");
 document.bookform.course.options[3]=new Option("4500", "4500");
@@ -147,7 +147,7 @@ document.bookform.course.options[18]=new Option("5840", "5840");
 document.bookform.course.options[19]=new Option("5850", "5850");
 break;
 case "242|ANTH" :
-document.bookform.course.options[0]=new Option("Select Sub-Category","");
+document.bookform.course.options[0]=new Option("Select Course...","");
 document.bookform.course.options[1]=new Option("1010", "1010");
 document.bookform.course.options[2]=new Option("1100", "1100");
 document.bookform.course.options[3]=new Option("1150", "1150");
@@ -177,20 +177,20 @@ document.bookform.course.options[26]=new Option("5810", "5810");
 document.bookform.course.options[27]=new Option("5810", "5810");
 break;
 case "309|ARBC" :
-document.bookform.course.options[0]=new Option("Select Sub-Category","");
+document.bookform.course.options[0]=new Option("Select Course...","");
 document.bookform.course.options[1]=new Option("1010", "1010");
 document.bookform.course.options[2]=new Option("2040", "2040");
 document.bookform.course.options[3]=new Option("3060", "3060");
 break;
 case "185|ARCH" :
-document.bookform.course.options[0]=new Option("Select Sub-Category","");
+document.bookform.course.options[0]=new Option("Select Course...","");
 document.bookform.course.options[1]=new Option("2800", "2800");
 document.bookform.course.options[2]=new Option("2900", "2900");
 document.bookform.course.options[3]=new Option("4620", "4620");
 document.bookform.course.options[4]=new Option("5620", "5620");
 break;
 case "236|ART" :
-document.bookform.course.options[0]=new Option("Select Sub-Category","");
+document.bookform.course.options[0]=new Option("Select Course...","");
 document.bookform.course.options[1]=new Option("1200", "1200");
 document.bookform.course.options[2]=new Option("1300", "1300");
 document.bookform.course.options[3]=new Option("1301", "1301");
@@ -204,7 +204,7 @@ document.bookform.course.options[10]=new Option("2360", "2360");
 document.bookform.course.options[11]=new Option("5700", "5700");
 break; 
 case "275|ASTU" :
-document.bookform.course.options[0]=new Option("Select Sub-Category","");
+document.bookform.course.options[0]=new Option("Select Course...","");
 document.bookform.course.options[1]=new Option("2050", "2050");
 document.bookform.course.options[2]=new Option("2120", "2120");
 document.bookform.course.options[3]=new Option("2130", "2130");
@@ -294,7 +294,7 @@ document.bookform.course.options[85]=new Option("5340", "5340");
 document.bookform.course.options[86]=new Option("5350", "5350");
 break;
 case "220|ATTD" :
-document.bookform.course.options[0]=new Option("Select Sub-Category","");
+document.bookform.course.options[0]=new Option("Select Course...","");
 document.bookform.course.options[1]=new Option("5100", "5100");
 document.bookform.course.options[2]=new Option("5110", "5110");
 document.bookform.course.options[3]=new Option("5121", "5121");
@@ -310,7 +310,7 @@ document.bookform.course.options[12]=new Option("6900", "6900");
 document.bookform.course.options[13]=new Option("6950", "6950");
 break;
 case "184|BCIS" :
-document.bookform.course.options[0]=new Option("Select Sub-Category","");
+document.bookform.course.options[0]=new Option("Select Course...","");
 document.bookform.course.options[1]=new Option("2610", "2610");
 document.bookform.course.options[2]=new Option("3610", "3610");
 document.bookform.course.options[3]=new Option("3615", "3615");
@@ -336,7 +336,7 @@ document.bookform.course.options[22]=new Option("5700", "5700");
 document.bookform.course.options[23]=new Option("5740", "5740");
 break;
 case "199|BEHV" :
-document.bookform.course.options[0]=new Option("Select Sub-Category","");
+document.bookform.course.options[0]=new Option("Select Course...","");
 document.bookform.course.options[1]=new Option("2300", "2300");
 document.bookform.course.options[2]=new Option("2700", "2700");
 document.bookform.course.options[3]=new Option("3000", "3000");
@@ -363,7 +363,7 @@ document.bookform.course.options[23]=new Option("5900", "5900");
 document.bookform.course.options[24]=new Option("5910", "5910");
 break;
 case "234|BIOC" :
-document.bookform.course.options[0]=new Option("Select Sub-Category","");
+document.bookform.course.options[0]=new Option("Select Course...","");
 document.bookform.course.options[1]=new Option("3621", "3621");
 document.bookform.course.options[2]=new Option("4540", "4540");
 document.bookform.course.options[3]=new Option("5540", "5540");
@@ -372,7 +372,7 @@ document.bookform.course.options[5]=new Option("5950", "5950");
 document.bookform.course.options[6]=new Option("6630", "6630");
 break;
 case "228|BIOL" :
-document.bookform.course.options[0]=new Option("Select Sub-Category","");
+document.bookform.course.options[0]=new Option("Select Course...","");
 document.bookform.course.options[1]=new Option("1000", "1000");
 document.bookform.course.options[2]=new Option("1082", "1082");
 document.bookform.course.options[3]=new Option("1112", "1112");
@@ -436,7 +436,7 @@ document.bookform.course.options[60]=new Option("6710", "6710");
 document.bookform.course.options[61]=new Option("6810", "6810");
 break;
 case "249|BLAW" :
-document.bookform.course.options[0]=new Option("Select Sub-Category","");
+document.bookform.course.options[0]=new Option("Select Course...","");
 document.bookform.course.options[1]=new Option("2000", "2000");
 document.bookform.course.options[2]=new Option("3430", "3430");
 document.bookform.course.options[3]=new Option("4450", "4450");
@@ -445,12 +445,12 @@ document.bookform.course.options[5]=new Option("5050", "5050");
 document.bookform.course.options[6]=new Option("5400", "5400");
 break; 
 case "390|BMEN" :
-document.bookform.course.options[0]=new Option("Select Sub-Category","");
+document.bookform.course.options[0]=new Option("Select Course...","");
 document.bookform.course.options[1]=new Option("1300", "1300");
 document.bookform.course.options[2]=new Option("2980", "2980");
 break;
 case "192|BUSI" :
-document.bookform.course.options[0]=new Option("Select Sub-Category","");
+document.bookform.course.options[0]=new Option("Select Course...","");
 document.bookform.course.options[1]=new Option("1340", "1340");
 document.bookform.course.options[2]=new Option("2900", "2900");
 document.bookform.course.options[3]=new Option("4900", "4900");
@@ -462,13 +462,13 @@ document.bookform.course.options[8]=new Option("6450", "6450");
 document.bookform.course.options[9]=new Option("6900", "6900");
 break;
 case "246|CBCM" :
-document.bookform.course.options[0]=new Option("Select Sub-Category","");
+document.bookform.course.options[0]=new Option("Select Course...","");
 document.bookform.course.options[1]=new Option("2400", "2400");
 document.bookform.course.options[2]=new Option("3500", "3500");
 document.bookform.course.options[3]=new Option("3525", "3525");
 break;
 case "221|CECS" :
-document.bookform.course.options[0]=new Option("Select Sub-Category","");
+document.bookform.course.options[0]=new Option("Select Course...","");
 document.bookform.course.options[1]=new Option("5010", "5010");
 document.bookform.course.options[2]=new Option("5030", "5030");
 document.bookform.course.options[3]=new Option("5110", "5110");
@@ -502,7 +502,7 @@ document.bookform.course.options[30]=new Option("6900", "6900");
 document.bookform.course.options[31]=new Option("6950", "6950");
 break;
 case "240|CHEM" :
-document.bookform.course.options[0]=new Option("Select Sub-Category","");
+document.bookform.course.options[0]=new Option("Select Course...","");
 document.bookform.course.options[1]=new Option("1360", "1360");
 document.bookform.course.options[2]=new Option("1400", "1400");
 document.bookform.course.options[3]=new Option("1410", "1410");
@@ -543,13 +543,13 @@ document.bookform.course.options[37]=new Option("5640", "5640");
 document.bookform.course.options[38]=new Option("5930", "5930");
 break;
 case "316|CHIN" :
-document.bookform.course.options[0]=new Option("Select Sub-Category","");
+document.bookform.course.options[0]=new Option("Select Course...","");
 document.bookform.course.options[1]=new Option("1010", "1010");
 document.bookform.course.options[2]=new Option("2040", "2040");
 document.bookform.course.options[3]=new Option("3040", "3040");
 break;
 case "183|CJUS" :
-document.bookform.course.options[0]=new Option("Select Sub-Category","");
+document.bookform.course.options[0]=new Option("Select Course...","");
 document.bookform.course.options[1]=new Option("2100", "2100");
 document.bookform.course.options[2]=new Option("2600", "2600");
 document.bookform.course.options[3]=new Option("2900", "2900");
@@ -586,7 +586,7 @@ document.bookform.course.options[33]=new Option("5900", "5900");
 document.bookform.course.options[34]=new Option("5950", "5950");
 break;
 case "213|CMHT" :
-document.bookform.course.options[0]=new Option("Select Sub-Category","");
+document.bookform.course.options[0]=new Option("Select Course...","");
 document.bookform.course.options[1]=new Option("3950", "3950");
 document.bookform.course.options[2]=new Option("4750", "4750");
 document.bookform.course.options[3]=new Option("5300", "5300");
@@ -595,7 +595,7 @@ document.bookform.course.options[5]=new Option("5460", "5460");
 document.bookform.course.options[6]=new Option("6500", "6500");
 break;
 case "237|CNET" :
-document.bookform.course.options[0]=new Option("Select Sub-Category","");
+document.bookform.course.options[0]=new Option("Select Course...","");
 document.bookform.course.options[1]=new Option("1160", "1160");
 document.bookform.course.options[2]=new Option("3150", "3150");
 document.bookform.course.options[3]=new Option("3160", "3160");
@@ -607,7 +607,7 @@ document.bookform.course.options[8]=new Option("4780", "4780");
 document.bookform.course.options[9]=new Option("4920", "4920");
 break;
 case "258|COMM" :
-document.bookform.course.options[0]=new Option("Select Sub-Category","");
+document.bookform.course.options[0]=new Option("Select Course...","");
 document.bookform.course.options[1]=new Option("1010", "1010");
 document.bookform.course.options[2]=new Option("1440", "1440");
 document.bookform.course.options[3]=new Option("2020", "2020");
@@ -640,7 +640,7 @@ document.bookform.course.options[29]=new Option("5820", "5820");
 document.bookform.course.options[30]=new Option("5860", "5860");
 break;
 case "238|COUN" :
-document.bookform.course.options[0]=new Option("Select Sub-Category","");
+document.bookform.course.options[0]=new Option("Select Course...","");
 document.bookform.course.options[1]=new Option("2610", "2610");
 document.bookform.course.options[2]=new Option("2620", "2620");
 document.bookform.course.options[3]=new Option("3600", "3600");
@@ -673,7 +673,7 @@ document.bookform.course.options[29]=new Option("6250", "6250");
 document.bookform.course.options[30]=new Option("6651", "6651");
 break;
 case "194|CSCE" :
-document.bookform.course.options[0]=new Option("Select Sub-Category","");
+document.bookform.course.options[0]=new Option("Select Course...","");
 document.bookform.course.options[1]=new Option("1010", "1010");
 document.bookform.course.options[2]=new Option("1030", "1030");
 document.bookform.course.options[3]=new Option("1040", "1040");
@@ -753,7 +753,7 @@ document.bookform.course.options[76]=new Option("6940", "6940");
 document.bookform.course.options[77]=new Option("6950", "6950");
 break;
 case "200|DANC" :
-document.bookform.course.options[0]=new Option("Select Sub-Category","");
+document.bookform.course.options[0]=new Option("Select Course...","");
 document.bookform.course.options[1]=new Option("1050", "1050");
 document.bookform.course.options[2]=new Option("1100", "1100");
 document.bookform.course.options[3]=new Option("1200", "1200");
@@ -785,7 +785,7 @@ document.bookform.course.options[28]=new Option("4900", "4900");
 document.bookform.course.options[29]=new Option("4910", "4910");
 break;
 case "271|DFST" :
-document.bookform.course.options[0]=new Option("Select Sub-Category","");
+document.bookform.course.options[0]=new Option("Select Course...","");
 document.bookform.course.options[1]=new Option("1013", "1013");
 document.bookform.course.options[2]=new Option("1023", "1023");
 document.bookform.course.options[3]=new Option("2033", "2033");
@@ -807,13 +807,13 @@ document.bookform.course.options[18]=new Option("4433", "4433");
 document.bookform.course.options[19]=new Option("4900", "4900");
 break;
 case "214|DRTL" :
-document.bookform.course.options[0]=new Option("Select Sub-Category","");
+document.bookform.course.options[0]=new Option("Select Course...","");
 document.bookform.course.options[1]=new Option("2090", "2090");
 document.bookform.course.options[2]=new Option("3090", "3090");
 document.bookform.course.options[3]=new Option("4090", "4090");
 break;
 case "181|DSCI" :
-document.bookform.course.options[0]=new Option("Select Sub-Category","");
+document.bookform.course.options[0]=new Option("Select Course...","");
 document.bookform.course.options[1]=new Option("2710", "2710");
 document.bookform.course.options[2]=new Option("3710", "3710");
 document.bookform.course.options[3]=new Option("3870", "3870");
@@ -831,7 +831,7 @@ document.bookform.course.options[14]=new Option("5360", "5360");
 document.bookform.course.options[15]=new Option("5900", "5900");
 break;
 case "281|EADP" :
-document.bookform.course.options[0]=new Option("Select Sub-Category","");
+document.bookform.course.options[0]=new Option("Select Course...","");
 document.bookform.course.options[1]=new Option("3010", "3010");
 document.bookform.course.options[2]=new Option("3035", "3035");
 document.bookform.course.options[3]=new Option("3045", "3045");
@@ -846,7 +846,7 @@ document.bookform.course.options[11]=new Option("4810", "4810");
 document.bookform.course.options[12]=new Option("4951", "4951");
 break;
 case "267|ECON" :
-document.bookform.course.options[0]=new Option("Select Sub-Category","");
+document.bookform.course.options[0]=new Option("Select Course...","");
 document.bookform.course.options[1]=new Option("1100", "1100");
 document.bookform.course.options[2]=new Option("1110", "1110");
 document.bookform.course.options[3]=new Option("3050", "3050");
@@ -888,7 +888,7 @@ document.bookform.course.options[38]=new Option("5930", "5930");
 document.bookform.course.options[39]=new Option("5950", "5950");
 break;
 case "226|EDAD" :
-document.bookform.course.options[0]=new Option("Select Sub-Category","");
+document.bookform.course.options[0]=new Option("Select Course...","");
 document.bookform.course.options[1]=new Option("5330", "5330");
 document.bookform.course.options[2]=new Option("5390", "5390");
 document.bookform.course.options[3]=new Option("5400", "5400");
@@ -914,7 +914,7 @@ document.bookform.course.options[22]=new Option("6900", "6900");
 document.bookform.course.options[23]=new Option("6950", "6950");
 break;
 case "225|EDBE" :
-document.bookform.course.options[0]=new Option("Select Sub-Category","");
+document.bookform.course.options[0]=new Option("Select Course...","");
 document.bookform.course.options[1]=new Option("3470", "3470");
 document.bookform.course.options[2]=new Option("3480", "3480");
 document.bookform.course.options[3]=new Option("4470", "4470");
@@ -925,7 +925,7 @@ document.bookform.course.options[7]=new Option("5580", "5580");
 document.bookform.course.options[8]=new Option("5582", "5582");
 break;
 case "229|EDCI" :
-document.bookform.course.options[0]=new Option("Select Sub-Category","");
+document.bookform.course.options[0]=new Option("Select Course...","");
 document.bookform.course.options[1]=new Option("5010", "5010");
 document.bookform.course.options[2]=new Option("5020", "5020");
 document.bookform.course.options[3]=new Option("5030", "5030");
@@ -942,7 +942,7 @@ document.bookform.course.options[13]=new Option("6340", "6340");
 document.bookform.course.options[14]=new Option("6800", "6800");
 break;
 case "230|EDEC" :
-document.bookform.course.options[0]=new Option("Select Sub-Category","");
+document.bookform.course.options[0]=new Option("Select Course...","");
 document.bookform.course.options[1]=new Option("3613", "3613");
 document.bookform.course.options[2]=new Option("4243", "4243");
 document.bookform.course.options[3]=new Option("4633", "4633");
@@ -956,7 +956,7 @@ document.bookform.course.options[10]=new Option("6910", "6910");
 document.bookform.course.options[11]=new Option("6950", "6950");
 break;
 case "231|EDEE" :
-document.bookform.course.options[0]=new Option("Select Sub-Category","");
+document.bookform.course.options[0]=new Option("Select Course...","");
 document.bookform.course.options[1]=new Option("2000", "2000");
 document.bookform.course.options[2]=new Option("3320", "3320");
 document.bookform.course.options[3]=new Option("3380", "3380");
@@ -973,7 +973,7 @@ document.bookform.course.options[13]=new Option("5105", "5105");
 document.bookform.course.options[14]=new Option("5115", "5115");
 break;
 case "256|EDHE" :
-document.bookform.course.options[0]=new Option("Select Sub-Category","");
+document.bookform.course.options[0]=new Option("Select Course...","");
 document.bookform.course.options[1]=new Option("5110", "5110");
 document.bookform.course.options[2]=new Option("5210", "5210");
 document.bookform.course.options[3]=new Option("5610", "5610");
@@ -989,14 +989,14 @@ document.bookform.course.options[12]=new Option("6760", "6760");
 document.bookform.course.options[13]=new Option("6790", "6790");
 break;
 case "269|EDLL" :
-document.bookform.course.options[0]=new Option("Select Sub-Category","");
+document.bookform.course.options[0]=new Option("Select Course...","");
 document.bookform.course.options[1]=new Option("6040", "6040");
 document.bookform.course.options[2]=new Option("6900", "6900");
 document.bookform.course.options[3]=new Option("6910", "6910");
 document.bookform.course.options[4]=new Option("6950", "6950");
 break;
 case "262|EDME" :
-document.bookform.course.options[0]=new Option("Select Sub-Category","");
+document.bookform.course.options[0]=new Option("Select Course...","");
 document.bookform.course.options[1]=new Option("3380", "3380");
 document.bookform.course.options[2]=new Option("4103", "4103");
 document.bookform.course.options[3]=new Option("4104", "4104");
@@ -1005,7 +1005,7 @@ document.bookform.course.options[5]=new Option("4340", "4340");
 document.bookform.course.options[6]=new Option("4351", "4351");
 break;
 case "223|EDRE" :
-document.bookform.course.options[0]=new Option("Select Sub-Category","");
+document.bookform.course.options[0]=new Option("Select Course...","");
 document.bookform.course.options[1]=new Option("4450", "4450");
 document.bookform.course.options[2]=new Option("4820", "4820");
 document.bookform.course.options[3]=new Option("4840", "4840");
@@ -1019,7 +1019,7 @@ document.bookform.course.options[10]=new Option("5370", "5370");
 document.bookform.course.options[11]=new Option("5900", "5900");
 break;
 case "224|EDSE" :
-document.bookform.course.options[0]=new Option("Select Sub-Category","");
+document.bookform.course.options[0]=new Option("Select Course...","");
 document.bookform.course.options[1]=new Option("3500", "3500");
 document.bookform.course.options[2]=new Option("3800", "3800");
 document.bookform.course.options[3]=new Option("3830", "3830");
@@ -1044,7 +1044,7 @@ document.bookform.course.options[21]=new Option("5118", "5118");
 document.bookform.course.options[22]=new Option("5800", "5800");
 break;
 case "270|EDSP" :
-document.bookform.course.options[0]=new Option("Select Sub-Category","");
+document.bookform.course.options[0]=new Option("Select Course...","");
 document.bookform.course.options[1]=new Option("3210", "3210");
 document.bookform.course.options[2]=new Option("3240", "3240");
 document.bookform.course.options[3]=new Option("3420", "3420");
@@ -1070,12 +1070,12 @@ document.bookform.course.options[22]=new Option("6280", "6280");
 document.bookform.course.options[23]=new Option("6530", "6530");
 break;
 case "376|EDUC" :
-document.bookform.course.options[0]=new Option("Select Sub-Category","");
+document.bookform.course.options[0]=new Option("Select Course...","");
 document.bookform.course.options[1]=new Option("6040", "6040");
 document.bookform.course.options[2]=new Option("6120", "6120");
 break;
 case "182|EENG" :
-document.bookform.course.options[0]=new Option("Select Sub-Category","");
+document.bookform.course.options[0]=new Option("Select Course...","");
 document.bookform.course.options[1]=new Option("2610", "2610");
 document.bookform.course.options[2]=new Option("2620", "2620");
 document.bookform.course.options[3]=new Option("2710", "2710");
@@ -1096,7 +1096,7 @@ document.bookform.course.options[17]=new Option("5890", "5890");
 document.bookform.course.options[18]=new Option("5950", "5950");
 break;
 case "245|ELET" :
-document.bookform.course.options[0]=new Option("Select Sub-Category","");
+document.bookform.course.options[0]=new Option("Select Course...","");
 document.bookform.course.options[1]=new Option("1720", "1720");
 document.bookform.course.options[2]=new Option("3220", "3220");
 document.bookform.course.options[3]=new Option("3700", "3700");
@@ -1107,7 +1107,7 @@ document.bookform.course.options[7]=new Option("4780", "4780");
 document.bookform.course.options[8]=new Option("4920", "4920");
 break;
 case "218|ENGL" :
-document.bookform.course.options[0]=new Option("Select Sub-Category","");
+document.bookform.course.options[0]=new Option("Select Course...","");
 document.bookform.course.options[1]=new Option("1310", "1310");
 document.bookform.course.options[2]=new Option("1315", "1315");
 document.bookform.course.options[3]=new Option("1320", "1320");
@@ -1161,7 +1161,7 @@ document.bookform.course.options[50]=new Option("6200", "6200");
 document.bookform.course.options[51]=new Option("6941", "6941");
 break;
 case "239|ENGR" :
-document.bookform.course.options[0]=new Option("Select Sub-Category","");
+document.bookform.course.options[0]=new Option("Select Course...","");
 document.bookform.course.options[1]=new Option("1304", "1304");
 document.bookform.course.options[2]=new Option("2301", "2301");
 document.bookform.course.options[3]=new Option("2302", "2302");
@@ -1174,7 +1174,7 @@ document.bookform.course.options[9]=new Option("3450", "3450");
 document.bookform.course.options[10]=new Option("3451", "3451");
 break;
 case "233|EPSY" :
-document.bookform.course.options[0]=new Option("Select Sub-Category","");
+document.bookform.course.options[0]=new Option("Select Course...","");
 document.bookform.course.options[1]=new Option("3013", "3013");
 document.bookform.course.options[2]=new Option("5000", "5000");
 document.bookform.course.options[3]=new Option("5033", "5033");
@@ -1203,7 +1203,7 @@ document.bookform.course.options[25]=new Option("6640", "6640");
 document.bookform.course.options[26]=new Option("6950", "6950");
 break;
 case "251|FINA" :
-document.bookform.course.options[0]=new Option("Select Sub-Category","");
+document.bookform.course.options[0]=new Option("Select Course...","");
 document.bookform.course.options[1]=new Option("2770", "2770");
 document.bookform.course.options[2]=new Option("3770", "3770");
 document.bookform.course.options[3]=new Option("4200", "4200");
@@ -1224,7 +1224,7 @@ document.bookform.course.options[17]=new Option("5510", "5510");
 document.bookform.course.options[18]=new Option("6100", "6100");
 break;
 case "279|FREN" :
-document.bookform.course.options[0]=new Option("Select Sub-Category","");
+document.bookform.course.options[0]=new Option("Select Course...","");
 document.bookform.course.options[1]=new Option("1010", "1010");
 document.bookform.course.options[2]=new Option("1020", "1020");
 document.bookform.course.options[3]=new Option("2040", "2040");
@@ -1242,7 +1242,7 @@ document.bookform.course.options[14]=new Option("5520", "5520");
 document.bookform.course.options[15]=new Option("5740", "5740");
 break;
 case "178|GEOG" :
-document.bookform.course.options[0]=new Option("Select Sub-Category","");
+document.bookform.course.options[0]=new Option("Select Course...","");
 document.bookform.course.options[1]=new Option("1200", "1200");
 document.bookform.course.options[2]=new Option("1710", "1710");
 document.bookform.course.options[3]=new Option("2110", "2110");
@@ -1277,13 +1277,13 @@ document.bookform.course.options[31]=new Option("5800", "5800");
 document.bookform.course.options[32]=new Option("5960", "5960");
 break;
 case "179|GEOL" :
-document.bookform.course.options[0]=new Option("Select Sub-Category","");
+document.bookform.course.options[0]=new Option("Select Course...","");
 document.bookform.course.options[1]=new Option("1610", "1610");
 document.bookform.course.options[2]=new Option("3000", "3000");
 document.bookform.course.options[3]=new Option("4710", "4710");
 break;
 case "277|GERM" :
-document.bookform.course.options[0]=new Option("Select Sub-Category","");
+document.bookform.course.options[0]=new Option("Select Course...","");
 document.bookform.course.options[1]=new Option("1010", "1010");
 document.bookform.course.options[2]=new Option("1020", "1020");
 document.bookform.course.options[3]=new Option("2040", "2040");
@@ -1297,13 +1297,13 @@ document.bookform.course.options[10]=new Option("4920", "4920");
 document.bookform.course.options[11]=new Option("5900", "5900");
 break;
 case "215|HFMD" :
-document.bookform.course.options[0]=new Option("Select Sub-Category","");
+document.bookform.course.options[0]=new Option("Select Course...","");
 document.bookform.course.options[1]=new Option("2400", "2400");
 document.bookform.course.options[2]=new Option("2655", "2655");
 document.bookform.course.options[3]=new Option("3570", "3570");
 break;
 case "193|HIST" :
-document.bookform.course.options[0]=new Option("Select Sub-Category","");
+document.bookform.course.options[0]=new Option("Select Course...","");
 document.bookform.course.options[1]=new Option("1050", "1050");
 document.bookform.course.options[2]=new Option("1060", "1060");
 document.bookform.course.options[3]=new Option("2610", "2610");
@@ -1355,7 +1355,7 @@ document.bookform.course.options[48]=new Option("6000", "6000");
 document.bookform.course.options[49]=new Option("6940", "6940");
 break;
 case "241|HLTH" :
-document.bookform.course.options[0]=new Option("Select Sub-Category","");
+document.bookform.course.options[0]=new Option("Select Course...","");
 document.bookform.course.options[1]=new Option("1100", "1100");
 document.bookform.course.options[2]=new Option("1900", "1900");
 document.bookform.course.options[3]=new Option("2100", "2100");
@@ -1371,7 +1371,7 @@ document.bookform.course.options[12]=new Option("4600", "4600");
 document.bookform.course.options[13]=new Option("4850", "4850");
 break;
 case "208|HMGT" :
-document.bookform.course.options[0]=new Option("Select Sub-Category","");
+document.bookform.course.options[0]=new Option("Select Course...","");
 document.bookform.course.options[1]=new Option("1420", "1420");
 document.bookform.course.options[2]=new Option("1450", "1450");
 document.bookform.course.options[3]=new Option("1470", "1470");
@@ -1402,11 +1402,11 @@ document.bookform.course.options[27]=new Option("5630", "5630");
 document.bookform.course.options[28]=new Option("5820", "5820");
 break;
 case "263|HNRS" :
-document.bookform.course.options[0]=new Option("Select Sub-Category","");
+document.bookform.course.options[0]=new Option("Select Course...","");
 document.bookform.course.options[1]=new Option("1100", "1100");
 break;
 case "384|INFO" :
-document.bookform.course.options[0]=new Option("Select Sub-Category","");
+document.bookform.course.options[0]=new Option("Select Course...","");
 document.bookform.course.options[1]=new Option("4300", "4300");
 document.bookform.course.options[2]=new Option("4400", "4400");
 document.bookform.course.options[3]=new Option("4685", "4685");
@@ -1444,7 +1444,7 @@ document.bookform.course.options[34]=new Option("6660", "6660");
 document.bookform.course.options[35]=new Option("6910", "6910");
 break;
 case "261|INST" :
-document.bookform.course.options[0]=new Option("Select Sub-Category","");
+document.bookform.course.options[0]=new Option("Select Course...","");
 document.bookform.course.options[1]=new Option("2100", "2100");
 document.bookform.course.options[2]=new Option("4800", "4800");
 document.bookform.course.options[3]=new Option("4850", "4850");
@@ -1455,13 +1455,13 @@ document.bookform.course.options[7]=new Option("5700", "5700");
 document.bookform.course.options[8]=new Option("5900", "5900");
 break;
 case "266|ITAL" :
-document.bookform.course.options[0]=new Option("Select Sub-Category","");
+document.bookform.course.options[0]=new Option("Select Course...","");
 document.bookform.course.options[1]=new Option("1010", "1010");
 document.bookform.course.options[2]=new Option("2040", "2040");
 document.bookform.course.options[3]=new Option("3080", "3080");
 break;
 case "273|JAPN" :
-document.bookform.course.options[0]=new Option("Select Sub-Category","");
+document.bookform.course.options[0]=new Option("Select Course...","");
 document.bookform.course.options[1]=new Option("1010", "1010");
 document.bookform.course.options[2]=new Option("1020", "1020");
 document.bookform.course.options[3]=new Option("2040", "2040");
@@ -1470,7 +1470,7 @@ document.bookform.course.options[5]=new Option("3020", "3020");
 document.bookform.course.options[6]=new Option("3040", "3040");
 break;
 case "191|JOUR" :
-document.bookform.course.options[0]=new Option("Select Sub-Category","");
+document.bookform.course.options[0]=new Option("Select Course...","");
 document.bookform.course.options[1]=new Option("1210", "1210");
 document.bookform.course.options[2]=new Option("2000", "2000");
 document.bookform.course.options[3]=new Option("2300", "2300");
@@ -1525,7 +1525,7 @@ document.bookform.course.options[51]=new Option("5550", "5550");
 document.bookform.course.options[52]=new Option("5700", "5700");
 break;
 case "211|KINE" :
-document.bookform.course.options[0]=new Option("Select Sub-Category","");
+document.bookform.course.options[0]=new Option("Select Course...","");
 document.bookform.course.options[1]=new Option("2030", "2030");
 document.bookform.course.options[2]=new Option("2050", "2050");
 document.bookform.course.options[3]=new Option("2230", "2230");
@@ -1570,7 +1570,7 @@ document.bookform.course.options[41]=new Option("6121", "6121");
 document.bookform.course.options[42]=new Option("6550", "6550");
 break;
 case "175|LGAV" :
-document.bookform.course.options[0]=new Option("Select Sub-Category","");
+document.bookform.course.options[0]=new Option("Select Course...","");
 document.bookform.course.options[1]=new Option("3100", "3100");
 document.bookform.course.options[2]=new Option("3110", "3110");
 document.bookform.course.options[3]=new Option("3120", "3120");
@@ -1580,7 +1580,7 @@ document.bookform.course.options[6]=new Option("3150", "3150");
 document.bookform.course.options[7]=new Option("4100", "4100");
 break;
 case "272|LING" :
-document.bookform.course.options[0]=new Option("Select Sub-Category","");
+document.bookform.course.options[0]=new Option("Select Course...","");
 document.bookform.course.options[1]=new Option("3060", "3060");
 document.bookform.course.options[2]=new Option("3070", "3070");
 document.bookform.course.options[3]=new Option("4030", "4030");
@@ -1592,7 +1592,7 @@ document.bookform.course.options[8]=new Option("5300", "5300");
 document.bookform.course.options[9]=new Option("5360", "5360");
 break;
 case "176|LSCM" :
-document.bookform.course.options[0]=new Option("Select Sub-Category","");
+document.bookform.course.options[0]=new Option("Select Course...","");
 document.bookform.course.options[1]=new Option("3960", "3960");
 document.bookform.course.options[2]=new Option("4360", "4360");
 document.bookform.course.options[3]=new Option("4510", "4510");
@@ -1605,7 +1605,7 @@ document.bookform.course.options[9]=new Option("5560", "5560");
 document.bookform.course.options[10]=new Option("6040", "6040");
 break;
 case "222|LTEC" :
-document.bookform.course.options[0]=new Option("Select Sub-Category","");
+document.bookform.course.options[0]=new Option("Select Course...","");
 document.bookform.course.options[1]=new Option("1100", "1100");
 document.bookform.course.options[2]=new Option("2100", "2100");
 document.bookform.course.options[3]=new Option("3010", "3010");
@@ -1636,7 +1636,7 @@ document.bookform.course.options[27]=new Option("4800", "4800");
 document.bookform.course.options[28]=new Option("4900", "4900");
 break;
 case "195|MATH" :
-document.bookform.course.options[0]=new Option("Select Sub-Category","");
+document.bookform.course.options[0]=new Option("Select Course...","");
 document.bookform.course.options[1]=new Option("1100", "1100");
 document.bookform.course.options[2]=new Option("1180", "1180");
 document.bookform.course.options[3]=new Option("1190", "1190");
@@ -1677,7 +1677,7 @@ document.bookform.course.options[37]=new Option("5810", "5810");
 document.bookform.course.options[38]=new Option("6810", "6810");
 break;
 case "204|MDSE" :
-document.bookform.course.options[0]=new Option("Select Sub-Category","");
+document.bookform.course.options[0]=new Option("Select Course...","");
 document.bookform.course.options[1]=new Option("2040", "2040");
 document.bookform.course.options[2]=new Option("2350", "2350");
 document.bookform.course.options[3]=new Option("2490", "2490");
@@ -1701,7 +1701,7 @@ document.bookform.course.options[20]=new Option("5650", "5650");
 document.bookform.course.options[21]=new Option("5850", "5850");
 break;
 case "212|MEEN" :
-document.bookform.course.options[0]=new Option("Select Sub-Category","");
+document.bookform.course.options[0]=new Option("Select Course...","");
 document.bookform.course.options[1]=new Option("1000", "1000");
 document.bookform.course.options[2]=new Option("2210", "2210");
 document.bookform.course.options[3]=new Option("2240", "2240");
@@ -1745,7 +1745,7 @@ document.bookform.course.options[40]=new Option("5940", "5940");
 document.bookform.course.options[41]=new Option("5950", "5950");
 break;
 case "248|MEET" :
-document.bookform.course.options[0]=new Option("Select Sub-Category","");
+document.bookform.course.options[0]=new Option("Select Course...","");
 document.bookform.course.options[1]=new Option("2900", "2900");
 document.bookform.course.options[2]=new Option("3940", "3940");
 document.bookform.course.options[3]=new Option("3990", "3990");
@@ -1758,7 +1758,7 @@ document.bookform.course.options[9]=new Option("4910", "4910");
 document.bookform.course.options[10]=new Option("4920", "4920");
 break;
 case "243|MFET" :
-document.bookform.course.options[0]=new Option("Select Sub-Category","");
+document.bookform.course.options[0]=new Option("Select Course...","");
 document.bookform.course.options[1]=new Option("2900", "2900");
 document.bookform.course.options[2]=new Option("3110", "3110");
 document.bookform.course.options[3]=new Option("4200", "4200");
@@ -1767,7 +1767,7 @@ document.bookform.course.options[5]=new Option("4900", "4900");
 document.bookform.course.options[6]=new Option("4910", "4910");
 break;
 case "180|MGMT" :
-document.bookform.course.options[0]=new Option("Select Sub-Category","");
+document.bookform.course.options[0]=new Option("Select Course...","");
 document.bookform.course.options[1]=new Option("3330", "3330");
 document.bookform.course.options[2]=new Option("3720", "3720");
 document.bookform.course.options[3]=new Option("3810", "3810");
@@ -1807,7 +1807,7 @@ document.bookform.course.options[36]=new Option("6940", "6940");
 document.bookform.course.options[37]=new Option("6950", "6950");
 break;
 case "177|MKTG" :
-document.bookform.course.options[0]=new Option("Select Sub-Category","");
+document.bookform.course.options[0]=new Option("Select Course...","");
 document.bookform.course.options[1]=new Option("2650", "2650");
 document.bookform.course.options[2]=new Option("3010", "3010");
 document.bookform.course.options[3]=new Option("3650", "3650");
@@ -1837,11 +1837,11 @@ document.bookform.course.options[26]=new Option("5850", "5850");
 document.bookform.course.options[27]=new Option("6020", "6020");
 break;
 case "190|MSCI" :
-document.bookform.course.options[0]=new Option("Select Sub-Category","");
+document.bookform.course.options[0]=new Option("Select Course...","");
 document.bookform.course.options[1]=new Option("6750", "6750");
 break;
 case "391|MSET" :
-document.bookform.course.options[0]=new Option("Select Sub-Category","");
+document.bookform.course.options[0]=new Option("Select Course...","");
 document.bookform.course.options[1]=new Option("5030", "5030");
 document.bookform.course.options[2]=new Option("5200", "5200");
 document.bookform.course.options[3]=new Option("5220", "5220");
@@ -1850,7 +1850,7 @@ document.bookform.course.options[5]=new Option("5310", "5310");
 document.bookform.course.options[6]=new Option("5800", "5800");
 break;
 case "232|MTSE" :
-document.bookform.course.options[0]=new Option("Select Sub-Category","");
+document.bookform.course.options[0]=new Option("Select Course...","");
 document.bookform.course.options[1]=new Option("3010", "3010");
 document.bookform.course.options[2]=new Option("3030", "3030");
 document.bookform.course.options[3]=new Option("4010", "4010");
@@ -1858,7 +1858,7 @@ document.bookform.course.options[4]=new Option("4030", "4030");
 document.bookform.course.options[5]=new Option("5010", "5010");
 break;
 case "392|MUAC" :
-document.bookform.course.options[0]=new Option("Select Sub-Category","");
+document.bookform.course.options[0]=new Option("Select Course...","");
 document.bookform.course.options[1]=new Option("1501", "1501");
 document.bookform.course.options[2]=new Option("1503", "1503");
 document.bookform.course.options[3]=new Option("1504", "1504");
@@ -1909,7 +1909,7 @@ document.bookform.course.options[47]=new Option("3537", "3537");
 document.bookform.course.options[48]=new Option("3538", "3538");
 break;
 case "186|MUAG" :
-document.bookform.course.options[0]=new Option("Select Sub-Category","");
+document.bookform.course.options[0]=new Option("Select Course...","");
 document.bookform.course.options[1]=new Option("1001", "1001");
 document.bookform.course.options[2]=new Option("1002", "1002");
 document.bookform.course.options[3]=new Option("1011", "1011");
@@ -1954,7 +1954,7 @@ document.bookform.course.options[41]=new Option("6370", "6370");
 document.bookform.course.options[42]=new Option("6850", "6850");
 break;
 case "385|MUAM" :
-document.bookform.course.options[0]=new Option("Select Sub-Category","");
+document.bookform.course.options[0]=new Option("Select Course...","");
 document.bookform.course.options[1]=new Option("1501", "1501");
 document.bookform.course.options[2]=new Option("1502", "1502");
 document.bookform.course.options[3]=new Option("1503", "1503");
@@ -2044,7 +2044,7 @@ document.bookform.course.options[86]=new Option("6533", "6533");
 document.bookform.course.options[87]=new Option("6534", "6534");
 break;
 case "196|MUAS" :
-document.bookform.course.options[0]=new Option("Select Sub-Category","");
+document.bookform.course.options[0]=new Option("Select Course...","");
 document.bookform.course.options[1]=new Option("1501", "1501");
 document.bookform.course.options[2]=new Option("1502", "1502");
 document.bookform.course.options[3]=new Option("1503", "1503");
@@ -2139,7 +2139,7 @@ document.bookform.course.options[91]=new Option("6527", "6527");
 document.bookform.course.options[92]=new Option("6528", "6528");
 break;
 case "203|MUCP" :
-document.bookform.course.options[0]=new Option("Select Sub-Category","");
+document.bookform.course.options[0]=new Option("Select Course...","");
 document.bookform.course.options[1]=new Option("1180", "1180");
 document.bookform.course.options[2]=new Option("1190", "1190");
 document.bookform.course.options[3]=new Option("2080", "2080");
@@ -2169,7 +2169,7 @@ document.bookform.course.options[26]=new Option("6900", "6900");
 document.bookform.course.options[27]=new Option("6910", "6910");
 break;
 case "264|MUED" :
-document.bookform.course.options[0]=new Option("Select Sub-Category","");
+document.bookform.course.options[0]=new Option("Select Course...","");
 document.bookform.course.options[1]=new Option("1130", "1130");
 document.bookform.course.options[2]=new Option("2310", "2310");
 document.bookform.course.options[3]=new Option("3100", "3100");
@@ -2185,7 +2185,7 @@ document.bookform.course.options[12]=new Option("5510", "5510");
 document.bookform.course.options[13]=new Option("6440", "6440");
 break;
 case "219|MUET" :
-document.bookform.course.options[0]=new Option("Select Sub-Category","");
+document.bookform.course.options[0]=new Option("Select Course...","");
 document.bookform.course.options[1]=new Option("3020", "3020");
 document.bookform.course.options[2]=new Option("3030", "3030");
 document.bookform.course.options[3]=new Option("3617", "3617");
@@ -2194,11 +2194,11 @@ document.bookform.course.options[5]=new Option("5020", "5020");
 document.bookform.course.options[6]=new Option("5617", "5617");
 break;
 case "378|MUGC" :
-document.bookform.course.options[0]=new Option("Select Sub-Category","");
+document.bookform.course.options[0]=new Option("Select Course...","");
 document.bookform.course.options[1]=new Option("4890", "4890");
 break;
 case "257|MUJS" :
-document.bookform.course.options[0]=new Option("Select Sub-Category","");
+document.bookform.course.options[0]=new Option("Select Course...","");
 document.bookform.course.options[1]=new Option("1470", "1470");
 document.bookform.course.options[2]=new Option("3610", "3610");
 document.bookform.course.options[3]=new Option("4470", "4470");
@@ -2215,7 +2215,7 @@ document.bookform.course.options[13]=new Option("6532", "6532");
 document.bookform.course.options[14]=new Option("6539", "6539");
 break;
 case "202|MUMH" :
-document.bookform.course.options[0]=new Option("Select Sub-Category","");
+document.bookform.course.options[0]=new Option("Select Course...","");
 document.bookform.course.options[1]=new Option("1600", "1600");
 document.bookform.course.options[2]=new Option("2040", "2040");
 document.bookform.course.options[3]=new Option("3000", "3000");
@@ -2238,7 +2238,7 @@ document.bookform.course.options[19]=new Option("6160", "6160");
 document.bookform.course.options[20]=new Option("6750", "6750");
 break;
 case "205|MUTH" :
-document.bookform.course.options[0]=new Option("Select Sub-Category","");
+document.bookform.course.options[0]=new Option("Select Course...","");
 document.bookform.course.options[1]=new Option("1300", "1300");
 document.bookform.course.options[2]=new Option("1400", "1400");
 document.bookform.course.options[3]=new Option("1410", "1410");
@@ -2271,12 +2271,12 @@ document.bookform.course.options[29]=new Option("6660", "6660");
 document.bookform.course.options[30]=new Option("6680", "6680");
 break;
 case "387|NCTM" :
-document.bookform.course.options[0]=new Option("Select Sub-Category","");
+document.bookform.course.options[0]=new Option("Select Course...","");
 document.bookform.course.options[1]=new Option("331", "331");
 document.bookform.course.options[2]=new Option("332", "332");
 break;
 case "274|PACS" :
-document.bookform.course.options[0]=new Option("Select Sub-Category","");
+document.bookform.course.options[0]=new Option("Select Course...","");
 document.bookform.course.options[1]=new Option("3020", "3020");
 document.bookform.course.options[2]=new Option("4000", "4000");
 document.bookform.course.options[3]=new Option("4010", "4010");
@@ -2291,7 +2291,7 @@ document.bookform.course.options[11]=new Option("4610", "4610");
 document.bookform.course.options[12]=new Option("4900", "4900");
 break;
 case "280|PADM" :
-document.bookform.course.options[0]=new Option("Select Sub-Category","");
+document.bookform.course.options[0]=new Option("Select Course...","");
 document.bookform.course.options[1]=new Option("2100", "2100");
 document.bookform.course.options[2]=new Option("3000", "3000");
 document.bookform.course.options[3]=new Option("3410", "3410");
@@ -2317,7 +2317,7 @@ document.bookform.course.options[22]=new Option("6940", "6940");
 document.bookform.course.options[23]=new Option("6950", "6950");
 break;
 case "252|PHED" :
-document.bookform.course.options[0]=new Option("Select Sub-Category","");
+document.bookform.course.options[0]=new Option("Select Course...","");
 document.bookform.course.options[1]=new Option("1000", "1000");
 document.bookform.course.options[2]=new Option("1010", "1010");
 document.bookform.course.options[3]=new Option("1030", "1030");
@@ -2349,7 +2349,7 @@ document.bookform.course.options[28]=new Option("1791", "1791");
 document.bookform.course.options[29]=new Option("2900", "2900");
 break;
 case "247|PHIL" :
-document.bookform.course.options[0]=new Option("Select Sub-Category","");
+document.bookform.course.options[0]=new Option("Select Course...","");
 document.bookform.course.options[1]=new Option("1050", "1050");
 document.bookform.course.options[2]=new Option("1400", "1400");
 document.bookform.course.options[3]=new Option("1800", "1800");
@@ -2377,7 +2377,7 @@ document.bookform.course.options[24]=new Option("5300", "5300");
 document.bookform.course.options[25]=new Option("6780", "6780");
 break;
 case "227|PHYS" :
-document.bookform.course.options[0]=new Option("Select Sub-Category","");
+document.bookform.course.options[0]=new Option("Select Course...","");
 document.bookform.course.options[1]=new Option("1052", "1052");
 document.bookform.course.options[2]=new Option("1062", "1062");
 document.bookform.course.options[3]=new Option("1210", "1210");
@@ -2417,7 +2417,7 @@ document.bookform.course.options[36]=new Option("6155", "6155");
 document.bookform.course.options[37]=new Option("6800", "6800");
 break;
 case "254|PSCI" :
-document.bookform.course.options[0]=new Option("Select Sub-Category","");
+document.bookform.course.options[0]=new Option("Select Course...","");
 document.bookform.course.options[1]=new Option("1010", "1010");
 document.bookform.course.options[2]=new Option("1040", "1040");
 document.bookform.course.options[3]=new Option("1041", "1041");
@@ -2452,7 +2452,7 @@ document.bookform.course.options[31]=new Option("6000", "6000");
 document.bookform.course.options[32]=new Option("6320", "6320");
 break;
 case "210|PSYC" :
-document.bookform.course.options[0]=new Option("Select Sub-Category","");
+document.bookform.course.options[0]=new Option("Select Course...","");
 document.bookform.course.options[1]=new Option("1500", "1500");
 document.bookform.course.options[2]=new Option("1630", "1630");
 document.bookform.course.options[3]=new Option("1650", "1650");
@@ -2499,7 +2499,7 @@ document.bookform.course.options[43]=new Option("6420", "6420");
 document.bookform.course.options[44]=new Option("6640", "6640");
 break;
 case "282|REAL" :
-document.bookform.course.options[0]=new Option("Select Sub-Category","");
+document.bookform.course.options[0]=new Option("Select Course...","");
 document.bookform.course.options[1]=new Option("2100", "2100");
 document.bookform.course.options[2]=new Option("3100", "3100");
 document.bookform.course.options[3]=new Option("4200", "4200");
@@ -2508,7 +2508,7 @@ document.bookform.course.options[5]=new Option("4400", "4400");
 document.bookform.course.options[6]=new Option("4800", "4800");
 break;
 case "209|RECR" :
-document.bookform.course.options[0]=new Option("Select Sub-Category","");
+document.bookform.course.options[0]=new Option("Select Course...","");
 document.bookform.course.options[1]=new Option("1950", "1950");
 document.bookform.course.options[2]=new Option("2150", "2150");
 document.bookform.course.options[3]=new Option("2550", "2550");
@@ -2533,7 +2533,7 @@ document.bookform.course.options[21]=new Option("5910", "5910");
 document.bookform.course.options[22]=new Option("5950", "5950");
 break;
 case "235|RHAB" :
-document.bookform.course.options[0]=new Option("Select Sub-Category","");
+document.bookform.course.options[0]=new Option("Select Course...","");
 document.bookform.course.options[1]=new Option("2575", "2575");
 document.bookform.course.options[2]=new Option("3000", "3000");
 document.bookform.course.options[3]=new Option("3100", "3100");
@@ -2561,7 +2561,7 @@ document.bookform.course.options[24]=new Option("5812", "5812");
 document.bookform.course.options[25]=new Option("5950", "5950");
 break;
 case "255|RMIN" :
-document.bookform.course.options[0]=new Option("Select Sub-Category","");
+document.bookform.course.options[0]=new Option("Select Course...","");
 document.bookform.course.options[1]=new Option("2500", "2500");
 document.bookform.course.options[2]=new Option("4200", "4200");
 document.bookform.course.options[3]=new Option("4300", "4300");
@@ -2571,7 +2571,7 @@ document.bookform.course.options[6]=new Option("4800", "4800");
 document.bookform.course.options[7]=new Option("5780", "5780");
 break;
 case "216|RTVF" :
-document.bookform.course.options[0]=new Option("Select Sub-Category","");
+document.bookform.course.options[0]=new Option("Select Course...","");
 document.bookform.course.options[1]=new Option("1310", "1310");
 document.bookform.course.options[2]=new Option("1320", "1320");
 document.bookform.course.options[3]=new Option("2010", "2010");
@@ -2630,18 +2630,18 @@ document.bookform.course.options[55]=new Option("5910", "5910");
 document.bookform.course.options[56]=new Option("5950", "5950");
 break;
 case "265|RUSS" :
-document.bookform.course.options[0]=new Option("Select Sub-Category","");
+document.bookform.course.options[0]=new Option("Select Course...","");
 document.bookform.course.options[1]=new Option("1010", "1010");
 document.bookform.course.options[2]=new Option("2040", "2040");
 document.bookform.course.options[3]=new Option("3070", "3070");
 break;
 case "207|SLIS" :
-document.bookform.course.options[0]=new Option("Select Sub-Category","");
+document.bookform.course.options[0]=new Option("Select Course...","");
 document.bookform.course.options[1]=new Option("5815", "5815");
 document.bookform.course.options[2]=new Option("6945", "6945");
 break;
 case "187|SOCI" :
-document.bookform.course.options[0]=new Option("Select Sub-Category","");
+document.bookform.course.options[0]=new Option("Select Course...","");
 document.bookform.course.options[1]=new Option("1510", "1510");
 document.bookform.course.options[2]=new Option("1520", "1520");
 document.bookform.course.options[3]=new Option("2010", "2010");
@@ -2674,7 +2674,7 @@ document.bookform.course.options[29]=new Option("6200", "6200");
 document.bookform.course.options[30]=new Option("6500", "6500");
 break;
 case "278|SOWK" :
-document.bookform.course.options[0]=new Option("Select Sub-Category","");
+document.bookform.course.options[0]=new Option("Select Course...","");
 document.bookform.course.options[1]=new Option("1450", "1450");
 document.bookform.course.options[2]=new Option("2430", "2430");
 document.bookform.course.options[3]=new Option("3500", "3500");
@@ -2693,7 +2693,7 @@ document.bookform.course.options[15]=new Option("4900", "4900");
 document.bookform.course.options[16]=new Option("4910", "4910");
 break;
 case "276|SPAN" :
-document.bookform.course.options[0]=new Option("Select Sub-Category","");
+document.bookform.course.options[0]=new Option("Select Course...","");
 document.bookform.course.options[1]=new Option("1010", "1010");
 document.bookform.course.options[2]=new Option("1020", "1020");
 document.bookform.course.options[3]=new Option("2040", "2040");
@@ -2723,7 +2723,7 @@ document.bookform.course.options[26]=new Option("5230", "5230");
 document.bookform.course.options[27]=new Option("5480", "5480");
 break;
 case "217|SPHS" :
-document.bookform.course.options[0]=new Option("Select Sub-Category","");
+document.bookform.course.options[0]=new Option("Select Course...","");
 document.bookform.course.options[1]=new Option("1040", "1040");
 document.bookform.course.options[2]=new Option("2015", "2015");
 document.bookform.course.options[3]=new Option("2020", "2020");
@@ -2759,7 +2759,7 @@ document.bookform.course.options[32]=new Option("6770", "6770");
 document.bookform.course.options[33]=new Option("6800", "6800");
 break;
 case "260|TECM" :
-document.bookform.course.options[0]=new Option("Select Sub-Category","");
+document.bookform.course.options[0]=new Option("Select Course...","");
 document.bookform.course.options[1]=new Option("1200", "1200");
 document.bookform.course.options[2]=new Option("1700", "1700");
 document.bookform.course.options[3]=new Option("2700", "2700");
@@ -2775,7 +2775,7 @@ document.bookform.course.options[12]=new Option("5191", "5191");
 document.bookform.course.options[13]=new Option("5550", "5550");
 break;
 case "201|THEA" :
-document.bookform.course.options[0]=new Option("Select Sub-Category","");
+document.bookform.course.options[0]=new Option("Select Course...","");
 document.bookform.course.options[1]=new Option("1030", "1030");
 document.bookform.course.options[2]=new Option("1043", "1043");
 document.bookform.course.options[3]=new Option("1046", "1046");
@@ -2812,7 +2812,7 @@ document.bookform.course.options[33]=new Option("4910", "4910");
 document.bookform.course.options[34]=new Option("4920", "4920");
 break;
 case "188|UCRS" :
-document.bookform.course.options[0]=new Option("Select Sub-Category","");
+document.bookform.course.options[0]=new Option("Select Course...","");
 document.bookform.course.options[1]=new Option("1100", "1100");
 document.bookform.course.options[2]=new Option("1850", "1850");
 document.bookform.course.options[3]=new Option("2100", "2100");
@@ -2823,7 +2823,7 @@ document.bookform.course.options[7]=new Option("4800", "4800");
 document.bookform.course.options[8]=new Option("5800", "5800");
 break;
 case "253|WMST" :
-document.bookform.course.options[0]=new Option("Select Sub-Category","");
+document.bookform.course.options[0]=new Option("Select Course...","");
 document.bookform.course.options[1]=new Option("2100", "2100");
 document.bookform.course.options[2]=new Option("2420", "2420");
 document.bookform.course.options[3]=new Option("2900", "2900");

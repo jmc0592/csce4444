@@ -141,6 +141,9 @@ select{
 	margin:auto;
 }
 
+#description {
+	text-align: center;
+}
 /*
 #voertmans{
 	background-color:pink;
