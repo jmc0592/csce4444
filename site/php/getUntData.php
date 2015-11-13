@@ -23,7 +23,7 @@ function queryDataUnt($department, $course, $section = "001") {
             $GLOBALS['priceNewUnt'] = $object->get("priceNew");
         }
     } catch (ParseException $ex) {
-        print "nothing found.";
+        echo "Book not found in database.";
     }
 }
 
