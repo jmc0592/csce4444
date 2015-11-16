@@ -1,5 +1,11 @@
 <?php
-# queries our database from Parse.com
+/*
+ * getUnData.php
+ *
+ * This script queries from our online database at Parse.com
+ * 
+ * Author: Jacob Cole
+ */
 require '../parseConnect.php';
 use Parse\ParseObject;
 use Parse\ParseQuery;
@@ -10,7 +16,7 @@ function queryDataUnt($department, $course, $section = "001") {
     $query = new ParseQuery("Book");
     $query->startsWith("department", $department);
     $query->equalTo("course", $course);
-    $query->startsWith("section", $section);
+    //$query->startsWith("section", $section);
     $query->limit(1);
 
     try {

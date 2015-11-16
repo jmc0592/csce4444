@@ -1,4 +1,11 @@
 <?php
+    /*
+     * ParseHandlerTest.php
+     *
+     * Unit test for the Parse file
+     *
+     * Author: Jacob Cole
+     */
     use Parse\ParseObject;
 
     class ParseHandlerTest extends PHPUnit_Framework_TestCase
@@ -21,8 +28,7 @@
             $query->limit(1);
 
             $response = $query->count();
-            $this->assertTrue($response == 1);
-            
+            $this->assertTrue($response == 1);  
         }
     }
 ?>

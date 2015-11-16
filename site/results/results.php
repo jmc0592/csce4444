@@ -1,4 +1,12 @@
 <?php
+	/*
+	 * results.php
+	 * 
+	 * The results of the searched book. Also calls the Voertman's script file.
+	 *
+	 * Author: Parker Cantu, Jacob Cole (PHP)
+	 *
+	 */
 	session_start();
 	include '../php/getUntData.php';
 ?>

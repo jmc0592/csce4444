@@ -1,4 +1,9 @@
-import time#debug
+# voertmansOptionScraper.py
+#
+# A small script to obtain all the option data from Voertman's in order to scrape correctly
+#
+# Author: Jacob Cole
+import time
 import scrapy
 from scrapy.selector import HtmlXPathSelector
 from scrapy.http import HtmlResponse

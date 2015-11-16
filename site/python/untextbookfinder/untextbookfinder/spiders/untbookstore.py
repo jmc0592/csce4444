@@ -1,8 +1,10 @@
-# -*- coding: utf-8 -*-
-# Author: Jacob Cole
+# untbookstore.py
+#
 # Class for scraping all books from the UNT bookstore
 # This is only ran to obtain book prices to insert into our database. It will not be ran every time a book is selected. 
-	# So debug statements are okay and helpful if the script fails.
+#	 So debug statements are okay and helpful if the script fails.
+#
+# Author: Jacob Cole
 import time, sys, gc
 import scrapy
 import re

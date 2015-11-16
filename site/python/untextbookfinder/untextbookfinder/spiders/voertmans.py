@@ -1,3 +1,5 @@
+# voertmans.py
+#
 # Class to fill out textbook search form for Voertman's
 # Use the following command to call this from PHP where VALUE is <option value="x">:
 # 	scrapy crawl voertmans -a departmentChoice=VALUE -a courseChoice=VALUE -a sectionChoice=VALUE
