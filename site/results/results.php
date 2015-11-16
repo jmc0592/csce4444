@@ -80,7 +80,9 @@
 				var bookNew = <?php echo json_encode($_SESSION["bookNewVoert"]);?> + "<br/>";
 				var bookRental = <?php echo json_encode($_SESSION["bookRentalVoert"]);?>;
 				$("#loading").hide();
-				$("#voertmans p").after(bookNew.trim(), bookRental.trim());
+				$("#voertmans p").append(bookNew.trim());
+				$("#voertmans p").append(bookRental.trim());
+
 			}
 	    });
 	</script>

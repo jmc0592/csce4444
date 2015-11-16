@@ -120,7 +120,7 @@ class UntbookstoreSpider(scrapy.Spider):
 
 
 		hxs = self.convertToScrapyObject(self.driver.page_source)
-		departments = hxs.select('//ul[@class="columnLabelLayout"]/li[2]/ul/li//text()').extract()
+		departments = hxs.select('//div[@class="courseSelectContainer"]/div/div[2]/div/ul/li[2]/ul/li/h4/text()').extract()
 
 		print departments[0] + departments[1] + "-------------------"
 
@@ -148,7 +148,7 @@ class UntbookstoreSpider(scrapy.Spider):
 
 			#obtain course list
 			selector = self.convertToScrapyObject(self.driver.page_source)
-			courses = selector.select('//ul[@class="columnLabelLayout"]/li[3]/ul/li//text()').extract()
+			courses = selector.select('//div[@class="courseSelectContainer"]/div/div[2]/div/ul/li[3]/ul/li/h4/text()').extract()
 			print courses[0] + courses[1] + "-------------------"
 
 			j = 0
@@ -171,7 +171,7 @@ class UntbookstoreSpider(scrapy.Spider):
 				time.sleep(2)
 
 				selector = self.convertToScrapyObject(self.driver.page_source)
-				sections = selector.select('//ul[@class="columnLabelLayout"]/li[4]/ul/li//text()').extract()
+				sections = selector.select('//div[@class="courseSelectContainer"]/div/div[2]/div/ul/li[4]/ul/li/h4/text()').extract()
 				k = 0
 				while (k < len(sections)):
 					sectionName = sections[k]
