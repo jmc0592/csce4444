@@ -10,11 +10,12 @@
  */
     session_start();
     //command to get voertmans book info
-    $command = "/Library/Frameworks/Python.framework/Versions/2.7/bin/scrapy crawl voertmans -a departmentChoice=" . 
+    $command = "../../libraries/scrapy crawl voertmans -a departmentChoice=" . 
         $_SESSION["deptNumber"] . " -a courseChoice=" . $_SESSION["courseNumber"] . " -a sectionChoice=41334";
     exec($command, $result);
 
     if(isset($result[0])){
+        var_dump($result[0]);
         $resultData = json_decode($result[0], true);
 
         $_SESSION["bookNewVoert"] = $resultData["bookNew"];

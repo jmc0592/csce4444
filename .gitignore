@@ -6,3 +6,6 @@
 # Sublime Text files
 *.sublime-project
 *.sublime-workspace
+
+# Python files
+*.pyc

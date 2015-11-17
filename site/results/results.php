@@ -84,13 +84,11 @@
 			type: "POST",
 			url: "../python/untextbookfinder/processForm.php",
 			success: function() {
-				alert("Finished obtaining Voertman's data.");
 				var bookNew = <?php echo json_encode($_SESSION["bookNewVoert"]);?> + "<br/>";
 				var bookRental = <?php echo json_encode($_SESSION["bookRentalVoert"]);?>;
 				$("#loading").hide();
 				$("#voertmans p").append(bookNew.trim());
 				$("#voertmans p").append(bookRental.trim());
-
 			}
 	    });
 	</script>

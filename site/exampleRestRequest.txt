@@ -1,0 +1,13 @@
+- Basic REST request structure for Amazon API to get a book
+
+http://webservices.amazon.com/onca/xml?
+Service=AWSECommerceService&
+AWSAccessKeyId=[AWS Access Key ID]&
+AssociateTag=[Associate ID]&  
+Operation=ItemLookup&
+ItemId=[ISBN]&
+IncludeReviewsSummary=False&
+SearchIndex=Books&
+IdType=ISBN
+&Timestamp=[YYYY-MM-DDThh:mm:ssZ]
+&Signature=[Request Signature
