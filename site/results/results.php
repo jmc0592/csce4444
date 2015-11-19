@@ -61,7 +61,7 @@
 				<h1>UNT Bookstore</h1>
 				<p>
 					<?php if(isset($GLOBALS["priceNewUnt"])) : ?>
-						New Price - $<?=$GLOBALS["priceNewUnt"];?>
+						New: $<?=$GLOBALS["priceNewUnt"];?>
 					<?php endif;?>
 				</p>
 			</div>
@@ -78,15 +78,14 @@
 </body>
 </html>
 <?php if(isset($GLOBALS["name"])) : ?>
-	<script type="text/javascript">
+	<script type="text/javascript" language="JavaScript">
 		$("#loading").show();
 	    $.ajax({
 			type: "POST",
 			url: "../python/untextbookfinder/processForm.php",
 			success: function() {
-				var bookNew = <?php echo json_encode($_SESSION["bookNewVoert"]);?> + "<br/>";
-				var bookRental = <?php echo json_encode($_SESSION["bookRentalVoert"]);?>;
-				alert(bookNew.trim());
+				var bookNew = <?php if(isset($_SESSION["bookNewVoert"])) echo json_encode($_SESSION["bookNewVoert"]);?> + "<br/>";
+				var bookRental = <?php if(isset($_SESSION["bookRentalVoert"])) echo json_encode($_SESSION["bookRentalVoert"]);?> + " ";
 				$("#loading").hide();
 				$("#voertmans p").append(bookNew.trim());
 				$("#voertmans p").append(bookRental.trim());
