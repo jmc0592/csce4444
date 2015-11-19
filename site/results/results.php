@@ -86,6 +86,7 @@
 			success: function() {
 				var bookNew = <?php echo json_encode($_SESSION["bookNewVoert"]);?> + "<br/>";
 				var bookRental = <?php echo json_encode($_SESSION["bookRentalVoert"]);?>;
+				alert(bookNew.trim());
 				$("#loading").hide();
 				$("#voertmans p").append(bookNew.trim());
 				$("#voertmans p").append(bookRental.trim());

@@ -6,7 +6,15 @@
      *
      * Author: Jacob Cole
      */
+    /*
+    function __autoload($classname) {
+        $filename = "../../vendor/parse/php-sdk/src/Parse/" . $classname . ".php";  
+        require_once($filename);
+    }
+    */
+    require '../parseConnect.php';
     use Parse\ParseObject;
+    use Parse\ParseQuery;
 
     class ParseHandlerTest extends PHPUnit_Framework_TestCase
     {
@@ -27,8 +35,8 @@
             $query->startsWith('section', $section);
             $query->limit(1);
 
-            $response = $query->count();
-            $this->assertTrue($response == 1);  
+            $response = $query->find();
+            $this->assertTrue(count($response) == 1);  
         }
     }
 ?>
