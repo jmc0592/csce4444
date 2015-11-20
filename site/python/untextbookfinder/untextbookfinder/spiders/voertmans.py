@@ -14,7 +14,9 @@ import scrapy
 from scrapy.selector import HtmlXPathSelector
 from scrapy.contrib.spiders import Rule, CrawlSpider
 from selenium import webdriver
+from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.common.by import By
+from selenium.webdriver.firefox.firefox_profile import FirefoxProfile
 
 class VoertmansSpider(scrapy.Spider):
 	name = "voertmans"
@@ -34,6 +36,7 @@ class VoertmansSpider(scrapy.Spider):
 		return hxs
 
 	def submitForm(self, response):
+
 		driver = webdriver.Remote("http://localhost:4444/wd/hub", webdriver.DesiredCapabilities.HTMLUNITWITHJS)
 		driver.get(response.url)
 
@@ -60,10 +63,16 @@ class VoertmansSpider(scrapy.Spider):
 		courseOption.click()
 
 		#select section from dropdown
-		sectionOption = driver.find_element_by_xpath(
-			"//select[@id='section_selection']/option[@value='" + self.sectionChoice + "']"
-		)
-		sectionOption.click()
+		try:
+			sectionOption = driver.find_element_by_xpath(
+				"//select[@id='section_selection']/option[@value='" + self.sectionChoice + "']"
+			)
+			sectionOption.click()
+		except NoSuchElementException:
+			sectionOption = driver.find_element_by_xpath(
+				"//select[@id='section_selection']/option[@value='001']"
+			)
+			sectionOption.click()
 
 		driver.find_element_by_id("search-button").click()
 

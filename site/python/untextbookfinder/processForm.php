@@ -15,10 +15,11 @@
     exec($command, $result);
 
     if(isset($result[0])){
-        var_dump($result[0]);
+        unset($_SESSION["deptNumber"]);
+        unset($_SESSION["courseNumber"]);
+
         $resultData = json_decode($result[0], true);
 
-        $_SESSION["bookNewVoert"] = $resultData["bookNew"];
-        $_SESSION["bookRentalVoert"] = $resultData["bookRental"];
+        echo json_encode($resultData);
     }
 ?>

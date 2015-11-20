@@ -9,6 +9,10 @@
 	 */
 	session_start();
 	include '../php/getUntData.php';
+	unset($_SESSION["deptNumber"]);
+	unset($_SESSION["courseNumber"]);
+	unset($_SESSION["bookNewVoert"]);
+	unset($_SESSION["bookRentalVoert"]);
 ?>
 <html>
 <head>
@@ -82,13 +86,33 @@
 		$("#loading").show();
 	    $.ajax({
 			type: "POST",
+			dataType: "json",
 			url: "../python/untextbookfinder/processForm.php",
-			success: function() {
-				var bookNew = <?php if(isset($_SESSION["bookNewVoert"])) echo json_encode($_SESSION["bookNewVoert"]);?> + "<br/>";
-				var bookRental = <?php if(isset($_SESSION["bookRentalVoert"])) echo json_encode($_SESSION["bookRentalVoert"]);?> + " ";
+			success: function(data) {
+			
+				if (data != null) {
+					alert(data);
+					var bookNew = data["bookNew"] + "<br/>";
+					var bookRental = data["bookRental"];
+				} else {
+					var bookNewVoert = "";
+					var bookRentalVoert = "";
+				}
+
 				$("#loading").hide();
-				$("#voertmans p").append(bookNew.trim());
-				$("#voertmans p").append(bookRental.trim());
+
+				if(bookNew != "<br/>" && bookNew != "") {
+					$("#voertmans p").append(bookNew.trim());
+					$("#voertmans p").append(bookRental.trim());
+				} else if (bookNew != "<br/>") {
+					$("#voertmans p").append(bookNew.trim());
+				} else if (bookRental != "") {
+					$("#voertmans p").append(bookRental.trim());
+				}
+			},
+			error: function() {
+				$("#voertmans p").append("Book information unavailable.");
+				$("#loading").hide();
 			}
 	    });
 	</script>
