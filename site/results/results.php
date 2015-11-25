@@ -34,13 +34,13 @@
 				<h1>Info</h1>
 				<p>
 					<?php
-					//check only book name. book name should always be present if a book is available.
 					$deptArray = explode("|", $_POST["department"]);
 					$deptNumber = $deptArray[0];
 					$deptName = $deptArray[1];
 					$_SESSION["deptNumber"] = $deptNumber;
 					$_SESSION["courseNumber"] = $_POST["course"]; 
 					queryDataUnt($deptName, $_POST["course"]);
+					//check only book name. book name should always be present if a book is available.
 					if(isset($GLOBALS["name"])){
 						if(isset($GLOBALS["name"]))
 							echo "Name: " . $GLOBALS["name"];
@@ -91,7 +91,6 @@
 			success: function(data) {
 			
 				if (data != null) {
-					alert(data);
 					var bookNew = data["bookNew"] + "<br/>";
 					var bookRental = data["bookRental"];
 				} else {
@@ -101,6 +100,7 @@
 
 				$("#loading").hide();
 
+				//display both, or 1
 				if(bookNew != "<br/>" && bookNew != "") {
 					$("#voertmans p").append(bookNew.trim());
 					$("#voertmans p").append(bookRental.trim());
@@ -111,8 +111,8 @@
 				}
 			},
 			error: function() {
-				$("#voertmans p").append("Book information unavailable.");
 				$("#loading").hide();
+				$("#voertmans p").append("Book prices unavailable.");
 			}
 	    });
 	</script>

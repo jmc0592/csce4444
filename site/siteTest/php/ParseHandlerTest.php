@@ -6,12 +6,6 @@
      *
      * Author: Jacob Cole
      */
-    /*
-    function __autoload($classname) {
-        $filename = "../../vendor/parse/php-sdk/src/Parse/" . $classname . ".php";  
-        require_once($filename);
-    }
-    */
     require '../parseConnect.php';
     use Parse\ParseObject;
     use Parse\ParseQuery;

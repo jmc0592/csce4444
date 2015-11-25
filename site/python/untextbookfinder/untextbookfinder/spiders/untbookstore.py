@@ -124,8 +124,6 @@ class UntbookstoreSpider(scrapy.Spider):
 		hxs = self.convertToScrapyObject(self.driver.page_source)
 		departments = hxs.select('//div[@class="courseSelectContainer"]/div/div[2]/div/ul/li[2]/ul/li/h4/text()').extract()
 
-		print departments[0] + departments[1] + "-------------------"
-
 		#fill out form with all combinations of choices
 		i = 1
 		UntbookstoreSpider.globeI = i

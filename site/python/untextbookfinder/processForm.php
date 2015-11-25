@@ -14,12 +14,26 @@
         $_SESSION["deptNumber"] . " -a courseChoice=" . $_SESSION["courseNumber"] . " -a sectionChoice=41334";
     exec($command, $result);
 
-    if(isset($result[0])){
-        unset($_SESSION["deptNumber"]);
-        unset($_SESSION["courseNumber"]);
+    function sendJson($result) {
 
-        $resultData = json_decode($result[0], true);
+        $resultData = json_decode($result, true);
 
         echo json_encode($resultData);
     }
+
+    if(isset($result[0])){
+        sendJson($result[0]);
+    } else {
+        $command = "../../libraries/scrapy crawl voertmans -a departmentChoice=" . 
+            $_SESSION["deptNumber"] . " -a courseChoice=" . $_SESSION["courseNumber"] . " -a sectionChoice=42957";
+        exec($command, $result);
+
+        if(isset($result[0])){
+            sendJson($result[0]);
+        }
+    }
+
+    unset($_SESSION["deptNumber"]);
+    unset($_SESSION["courseNumber"]);
+
 ?>

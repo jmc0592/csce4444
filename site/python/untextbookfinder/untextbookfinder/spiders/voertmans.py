@@ -16,7 +16,6 @@ from scrapy.contrib.spiders import Rule, CrawlSpider
 from selenium import webdriver
 from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.common.by import By
-from selenium.webdriver.firefox.firefox_profile import FirefoxProfile
 
 class VoertmansSpider(scrapy.Spider):
 	name = "voertmans"
@@ -56,11 +55,15 @@ class VoertmansSpider(scrapy.Spider):
 		)
 		departmentOption.click()
 
+		time.sleep(2)
+
 		#select course from dropdown
 		courseOption = driver.find_element_by_xpath(
 			"//select[@id='course_selection']/option[@value='" + self.courseChoice + "']"
 		)
 		courseOption.click()
+
+		time.sleep(2)
 
 		#select section from dropdown
 		try:
@@ -83,7 +86,7 @@ class VoertmansSpider(scrapy.Spider):
 
 		return self.convertToScrapyObject(selSource)
 
-	def sendAsPost(self, bookName, bookChoice):
+	def dumpAsJsonForPhpCall(self, bookName, bookChoice):
 		name = bookName[0].rstrip('\r\n')
 		new = bookChoice[0].rstrip('\r\n')
 		rental = bookChoice[1].rstrip('\r\n')
@@ -97,4 +100,4 @@ class VoertmansSpider(scrapy.Spider):
 		bookName = selector.select('//div[@class="book-name"]/text()').extract()
 		bookChoice = selector.select('//td[@class="input-box book-choices a-right"]/select/option/text()').extract()
 
-		self.sendAsPost(bookName, bookChoice)
+		self.dumpAsJsonForPhpCall(bookName, bookChoice)
